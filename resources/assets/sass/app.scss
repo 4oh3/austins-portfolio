@@ -1,14 +1,248 @@
+/*
+Titles:
+font-family: 'PT Sans Narrow', sans-serif;
+Paragraphs:
+font-family: 'Oswald', sans-serif;
+blue: #0d47a1;
+white: #ffffff;
+grey: #b3b3b3;
+*/
 
-// Fonts
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+/* - - - - - - - - - - - - - - - - - - - - - -
+General / Universal Override
+- - - - - - - - - - - - - - - - - - - - - - */
 
-// Variables
-@import "variables";
-
-// Bootstrap
-@import '~bootstrap/scss/bootstrap';
-
-.navbar-laravel {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
+
+.wrapper {
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 960px;
+	padding-right: 25px;
+	padding-left: 25px;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - -
+Desktop Nav
+- - - - - - - - - - - - - - - - - - - - - - */
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+nav ul {
+	display: flex;
+	list-style: none;
+	text-transform: uppercase;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-bottom: 0;
+}
+
+nav ul:nth-of-type(1) {
+	margin-right: 0px;
+}
+
+nav ul:nth-of-type(2) {
+	margin-left: 0px;
+}
+
+nav li {
+	margin: 0 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 75px;
+}
+
+nav a {
+	font-size: 20px;
+	color: #ffffff;
+	padding-right: 10px;
+	padding-left: 10px;
+	transform: perspective(1px) translateZ(0);
+	transition-duration: 0.2s;
+}
+
+nav
+a:visited,
+a:link {
+	color: white;
+	text-decoration: none;
+}
+
+nav a:before {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: white;
+	transform: scaleY(0);
+	transform-origin: 50% 100%;
+	transition-property: transform;
+	transition-duration: 0.25s;
+	transition-timing-function: ease-out;
+}
+
+nav a:hover,
+nav a:active {
+	color: black;
+	text-decoration: none;
+}
+
+nav a:hover:before,
+nav a:active:before {
+	transform: scaleY(1);
+}
+
+@media (max-width: 842px) {
+	nav {
+		display: none;
+	}
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - -
+Mobile Nav
+- - - - - - - - - - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - - - - - - - - - -
+Mobile Nav-Dropdown
+- - - - - - - - - - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - - - - - - - - - -
+Hero
+- - - - - - - - - - - - - - - - - - - - - - */
+
+.hero-container {
+	background: url("/images/hero.jpg") no-repeat bottom;
+	background-size: cover;
+	background-color: rgba(0, 0, 0, 0.5);
+	background-blend-mode: multiply;
+	background-attachment: fixed;
+	height: 82.5vh;
+	color: white;
+	font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.hero-text {
+	display: flex;
+	flex-direction: column;
+	padding-top: 22.5vh;
+}
+
+.hero-text h1 {
+	font-size: 60px;
+	font-style: oblique;
+	/* line-height: 45px; */
+}
+
+.hero-text p {
+	font-size: 27px;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - -
+My Skills
+- - - - - - - - - - - - - - - - - - - - - - */
+
+.skill-container {
+	display: flex;
+	/* width: 80%; */
+	margin: auto;
+	/* padding: 40px; */
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.skill-container
+h1,
+h2,
+h3 {
+	font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.skill-container h2 {
+	font-size: 22.5px;
+	margin-top: 7.5px;
+	margin-bottom: 0;
+}
+
+.skill-container h3 {
+	font-size: 18px;
+	text-align: right;
+}
+
+.skill-container h1 {
+	font-size: 60px;
+	font-style: oblique;
+}
+
+.skill-container p {
+	font-size: 25px;
+	font-weight: lighter;
+}
+
+.skill-grid {
+	display: flex;
+	flex-wrap: wrap;
+	/* max-width: 960px; */
+	width: 50%;
+	/* margin: auto; */
+}
+.skill-box {
+	display: flex;
+	flex-basis: 33.33%;
+	justify-content: center;
+	align-items: center;
+}
+
+.inner-box {
+	text-align: center;
+	padding: 20px;
+}
+
+.skill-text {
+	font-family: 'Oswald', sans-serif;
+	display: flex;
+	width: 50%;
+	flex-direction: column;
+	justify-content: center;
+	margin-left: 40px;
+	/* margin-right: 40px; */
+	/* margin: 0 auto; */
+}
+
+@media (max-width: 892px) {
+	.skill-text,
+	.skill-grid {
+		/* width: 100%; */
+	}
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - -
+Projects
+- - - - - - - - - - - - - - - - - - - - - - */
+
+.project-container {
+	display: none;
+	height: 35vh;
+	background-color: #b3b3b3;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - -
+Contact
+- - - - - - - - - - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - - - - - - - - - -
+About Page
+- - - - - - - - - - - - - - - - - - - - - - */

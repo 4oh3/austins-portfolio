@@ -20,3 +20,15 @@ Vue.component('example-component', require('./components/ExampleComponent.vue'))
 const app = new Vue({
     el: '#app'
 });
+
+/* - - - - - - - - - - - - - - - - - - - - - -
+My JS
+- - - - - - - - - - - - - - - - - - - - - - */
+
+$('.skill-box').click(function(){
+    $('.project-container').fadeIn('slow');
+
+    $('html, body').animate({
+        scrollTop: $(".project-container").offset().top
+        }, 750);
+});
