@@ -10625,10 +10625,10 @@ Mobile Nav Menu
 
 .mobile-menu {
   position: absolute;
-  width: 75%;
+  width: 100%;
   margin: -100px 0 0 -50px;
   padding: 125px 50px 50px 50px;
-  background: rgba(13, 71, 161, 0.95);
+  background-color: #0d47a1;
   list-style-type: none;
   -webkit-transform-origin: 0% 0%;
           transform-origin: 0% 0%;
@@ -10641,8 +10641,13 @@ Mobile Nav Menu
 }
 
 .mobile-menu li {
-  padding: 5px 0;
+  padding: 5px 7.5px;
   font-size: 26px;
+  text-transform: uppercase;
+}
+
+.mobile-menu li:hover {
+  background-color: #00146E;
 }
 
 .mobile-menu svg {
@@ -10650,7 +10655,7 @@ Mobile Nav Menu
 }
 
 .mobile-menu span {
-  margin: 10px 0 10px 0;
+  margin: 25px 0 25px 7.5px;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - -
@@ -10720,7 +10725,6 @@ h3 {
 
 .skill-container h3 {
   font-size: 18px;
-  text-align: right;
 }
 
 .skill-container h1 {
@@ -10739,9 +10743,7 @@ h3 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  /* max-width: 960px; */
   width: 50%;
-  /* margin: auto; */
 }
 
 .skill-box {
@@ -10780,18 +10782,28 @@ h3 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-left: 40px;
+  margin-right: 40px;
   /* margin-right: 40px; */
   /* margin: 0 auto; */
 }
 
 @media (max-width: 852px) {
-  .skill-grid {
+  .skill-container {
     display: block;
   }
 
+  .skill-grid {
+    width: 100%;
+  }
+
   .skill-text {
-    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .inner-box {
+    padding: 20px 0;
   }
 }
 

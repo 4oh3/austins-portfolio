@@ -20,8 +20,7 @@
         <nav class="mobile-nav">
             <div class="mobile-nav-toggle">
 
-                <input type="checkbox" />
-
+                <input class="toggle" type="checkbox" />
 
                 {{-- Hamburger Menu --}}
                 <span></span>
@@ -29,16 +28,21 @@
                 <span></span>
 
                 <ul class="mobile-menu">
-                    <li><a href="/">Home</a></li>
-                    <li><a class="projects" href="#projects">Projects</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <a href="/"><li>Home</li></a>
+                    <a class="projects" href="#projects"><li>Projects</li></a>
+                    <a href="#"><li>About</li></a>
+                    <a href="#"><li>Contact</li></a>
                     <span></span>
-                    <li><a href="https://www.instagram.com/4oh3/"><i class="fab fa-instagram fa-lg"></i>Instagram</a></li>
-                    <li><a href="http://linkedin.com/in/austinsmiht/"><i class="fab fa-linkedin fa-lg"></i>Linkedin</a></li>
-                    <li><a href="https://github.com/4oh3"><i class="fab fa-github fa-lg"></i>Github</a></li>
-                    <li><a href="https://bitbucket.org/4oh3/"><i class="fab fa-bitbucket fa-lg"></i>BitBucket</a></li>
+
+                    <a href="https://www.instagram.com/4oh3/"><li><i class="fab fa-instagram fa-lg"></i>Instagram</li></a>
+
+                    <a href="http://linkedin.com/in/austinsmiht/"><li><i class="fab fa-linkedin fa-lg"></i>Linkedin</li></a>
+
+                    <a href="https://github.com/4oh3"><li><i class="fab fa-github fa-lg"></i>Github</li></a>
+
+                    <a href="https://bitbucket.org/4oh3/"><li><i class="fab fa-bitbucket fa-lg"></i>BitBucket</li></a>
                 </ul>
+
             </div>
         </nav>
 
@@ -63,6 +67,11 @@
     </section>
 
     <div class="skill-container wrapper" id="projects">
+        <div class="skill-text">
+            <h1>My Skills</h1>
+            <p>Go ahead, click one!
+                <br>These are a show of some of the technologies that we concentrated on for the duration of the course at SAIT.</p>
+        </div>
         <div class="skill-grid">
             <div id="html" class="skill-box hvr-bob hvr-sweep-to-top">
                 <div class="inner-box">
@@ -125,7 +134,7 @@
                     <div class="caption">
                         <i class="fas fa-book fa-4x"></i>
                         <h2>Libraries</h2>
-                        <h3>JQuery</h3>
+                        <h3>- JQuery</h3>
                     </div>
                 </div>
             </div>
@@ -134,15 +143,10 @@
                     <div class="caption">
                         <i class="fas fa-cogs fa-4x"></i>
                         <h2>Frameworks</h2>
-                        <h3>Bootstrap</h3>
+                        <h3>- Bootstrap</h3>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="skill-text">
-            <h1>My Skills</h1>
-            <p>Go ahead, click one!
-                <br>These are a show of some of the technologies that we concentrated on for the duration of the course at SAIT.</p>
         </div>
     </div>
 

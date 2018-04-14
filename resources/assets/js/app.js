@@ -5,9 +5,9 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-require('./bootstrap');
-
-window.Vue = require('vue');
+// require('./bootstrap');
+//
+// window.Vue = require('vue');
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -15,11 +15,11 @@ window.Vue = require('vue');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('example-component', require('./components/ExampleComponent.vue'));
-
-const app = new Vue({
-    el: '#app'
-});
+// Vue.component('example-component', require('./components/ExampleComponent.vue'));
+//
+// const app = new Vue({
+//     el: '#app'
+// });
 
 //  //  //  //  //  //  My JS  //  //  //  //  //  //
 
@@ -50,4 +50,13 @@ Show Project Relevant to Skill Clicked
 $('.skill-box').click(function() {
     var $element = $('.' + this.id).fadeIn(500);
     $('#project > div').not($element).hide();
+});
+
+/* - - - - - - - - - - - - - - - - - - - - - -
+Close Mobile Nav on <li> Click
+- - - - - - - - - - - - - - - - - - - - - - */
+
+$('.mobile-menu').click(function() {
+    $('input[type=”checkbox”]').toggle();
+    console.log('CLCIKED!');
 });
