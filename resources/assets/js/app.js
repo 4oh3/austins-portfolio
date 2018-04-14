@@ -21,8 +21,10 @@ const app = new Vue({
     el: '#app'
 });
 
+//  //  //  //  //  //  My JS  //  //  //  //  //  //
+
 /* - - - - - - - - - - - - - - - - - - - - - -
-My JS
+Expand Projects Section on Any Skill Click
 - - - - - - - - - - - - - - - - - - - - - - */
 
 $('.skill-box').click(function(){
@@ -31,4 +33,21 @@ $('.skill-box').click(function(){
     $('html, body').animate({
         scrollTop: $(".project-container").offset().top
         }, 750);
+});
+
+$('.projects').click(function(){
+    $('#projects').fadeIn('slow');
+
+    $('html, body').animate({
+        scrollTop: $("#projects").offset().top
+        }, 750);
+});
+
+/* - - - - - - - - - - - - - - - - - - - - - -
+Show Project Relevant to Skill Clicked
+- - - - - - - - - - - - - - - - - - - - - - */
+
+$('.skill-box').click(function() {
+    var $element = $('.' + this.id).fadeIn(500);
+    $('#project > div').not($element).hide();
 });

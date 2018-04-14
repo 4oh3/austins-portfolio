@@ -13894,19 +13894,38 @@ window.Vue = __webpack_require__(36);
 Vue.component('example-component', __webpack_require__(39));
 
 var app = new Vue({
-  el: '#app'
+    el: '#app'
 });
 
+//  //  //  //  //  //  My JS  //  //  //  //  //  //
+
 /* - - - - - - - - - - - - - - - - - - - - - -
-My JS
+Expand Projects Section on Any Skill Click
 - - - - - - - - - - - - - - - - - - - - - - */
 
 $('.skill-box').click(function () {
-  $('.project-container').fadeIn('slow');
+    $('.project-container').fadeIn('slow');
 
-  $('html, body').animate({
-    scrollTop: $(".project-container").offset().top
-  }, 750);
+    $('html, body').animate({
+        scrollTop: $(".project-container").offset().top
+    }, 750);
+});
+
+$('.projects').click(function () {
+    $('#projects').fadeIn('slow');
+
+    $('html, body').animate({
+        scrollTop: $("#projects").offset().top
+    }, 750);
+});
+
+/* - - - - - - - - - - - - - - - - - - - - - -
+Show Project Relevant to Skill Clicked
+- - - - - - - - - - - - - - - - - - - - - - */
+
+$('.skill-box').click(function () {
+    var $element = $('.' + this.id).fadeIn(500);
+    $('#project > div').not($element).hide();
 });
 
 /***/ }),

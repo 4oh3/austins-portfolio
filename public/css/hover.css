@@ -1387,7 +1387,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: #b3b3b3;
+  background: #0d47a1;
   -webkit-transform: scaleY(0);
   transform: scaleY(0);
   -webkit-transform-origin: 50% 100%;
@@ -1401,7 +1401,7 @@
   border-radius: 0px;
 }
 .hvr-sweep-to-top:hover, .hvr-sweep-to-top:focus, .hvr-sweep-to-top:active {
-  /* color: white; */
+  color: white;
 }
 .hvr-sweep-to-top:hover:before, .hvr-sweep-to-top:focus:before, .hvr-sweep-to-top:active:before {
   -webkit-transform: scaleY(1);
