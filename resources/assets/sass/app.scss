@@ -249,6 +249,7 @@ Hero
     height: 82.5vh;
     color: white;
     font-family: 'PT Sans Narrow', sans-serif;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 
 .hero-text {
@@ -273,11 +274,13 @@ Hero
 My Skills
 - - - - - - - - - - - - - - - - - - - - - - */
 
+.skill-section {
+    // TODO: Add box-shadow to bottom (inset?) - If not: remove .skill-section <div> in HTML
+}
+
 .skill-container {
     display: flex;
-    /* width: 80%; */
     margin: auto;
-    /* padding: 40px; */
     padding-top: 40px;
     padding-bottom: 40px;
 }
@@ -297,7 +300,6 @@ h3 {
 
 .skill-container h3 {
     font-size: 18px;
-    // text-align: right;
 }
 
 .skill-container h1 {
@@ -338,8 +340,6 @@ h3 {
     flex-direction: column;
     justify-content: center;
     margin-right: 40px;
-    /* margin-right: 40px; */
-    /* margin: 0 auto; */
 }
 
 @media (max-width: 892px) {
@@ -395,6 +395,13 @@ Projects
 /* - - - - - - - - - - - - - - - - - - - - - -
 Contact
 - - - - - - - - - - - - - - - - - - - - - - */
+
+.contact-container {
+    display: flex;
+    margin: auto;
+    height: 50vh;
+    background-color: #b3b3b3;
+}
 
 /* - - - - - - - - - - - - - - - - - - - - - -
 About Page

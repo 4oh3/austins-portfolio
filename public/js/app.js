@@ -103,6 +103,16 @@ module.exports = __webpack_require__(43);
 //  //  //  //  //  //  My JS  //  //  //  //  //  //
 
 /* - - - - - - - - - - - - - - - - - - - - - -
+General / Cleanups
+- - - - - - - - - - - - - - - - - - - - - - */
+
+// TODO: Scroll to top on reload - FIX CHROME
+
+$(document).ready(function () {
+    $(this).scrollTop(0);
+});
+
+/* - - - - - - - - - - - - - - - - - - - - - -
 Expand Projects Section on Any Skill Click
 - - - - - - - - - - - - - - - - - - - - - - */
 
@@ -117,8 +127,7 @@ $('.skill-box').click(function () {
 $('.projects').click(function () {
     $('#projects').fadeIn('slow');
 
-    $('html, body').animate({
-        scrollTop: $("#projects").offset().top
+    $('html, body').animate({ scrollTop: $("#projects").offset().top
     }, 750);
 });
 
@@ -132,15 +141,23 @@ $('.skill-box').click(function () {
 });
 
 /* - - - - - - - - - - - - - - - - - - - - - -
-Close Mobile Nav on <li> Click OR Off Nav Click + On Document Load
+Close Mobile Nav on <li> Click, Off Nav Click, Scroll + On Document Load
 - - - - - - - - - - - - - - - - - - - - - - */
 
-$(document).ready(function () {
+function uncheckCheckbox() {
     $('.toggle').prop('checked', false);
+}
+
+$(document).ready(function () {
+    uncheckCheckbox();
 });
 
 $('.mobile-menu, .skill-container').click(function () {
-    $('.toggle').prop('checked', false);
+    uncheckCheckbox();
+});
+
+$(document).scroll(function () {
+    uncheckCheckbox();
 });
 
 /***/ }),

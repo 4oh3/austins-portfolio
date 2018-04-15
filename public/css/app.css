@@ -10671,6 +10671,8 @@ Hero
   height: 82.5vh;
   color: white;
   font-family: 'PT Sans Narrow', sans-serif;
+  -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 
 .hero-text {
@@ -10704,9 +10706,7 @@ My Skills
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  /* width: 80%; */
   margin: auto;
-  /* padding: 40px; */
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -10783,8 +10783,6 @@ h3 {
       -ms-flex-pack: center;
           justify-content: center;
   margin-right: 40px;
-  /* margin-right: 40px; */
-  /* margin: 0 auto; */
 }
 
 @media (max-width: 892px) {
@@ -10843,6 +10841,15 @@ Projects
 /* - - - - - - - - - - - - - - - - - - - - - -
 Contact
 - - - - - - - - - - - - - - - - - - - - - - */
+
+.contact-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  height: 50vh;
+  background-color: #b3b3b3;
+}
 
 /* - - - - - - - - - - - - - - - - - - - - - -
 About Page

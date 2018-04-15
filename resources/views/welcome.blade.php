@@ -16,33 +16,25 @@
 <body>
 
     <section class="hero-container">
-
         <nav class="mobile-nav">
             <div class="mobile-nav-toggle">
-
                 <input class="toggle" type="checkbox"/>
-
                 {{-- Hamburger Menu --}}
                 <span></span>
                 <span></span>
                 <span></span>
-
+                {{-- Hamburger Menu --}}
                 <ul class="mobile-menu">
                     <a href="/"><li>Home</li></a>
                     <a class="projects" href="#projects"><li>Projects</li></a>
                     <a href="#"><li>About</li></a>
                     <a href="#"><li>Contact</li></a>
                     <span></span>
-
                     <a href="https://www.instagram.com/4oh3/"><li><i class="fab fa-instagram fa-lg"></i>Instagram</li></a>
-
                     <a href="http://linkedin.com/in/austinsmiht/"><li><i class="fab fa-linkedin fa-lg"></i>Linkedin</li></a>
-
                     <a href="https://github.com/4oh3"><li><i class="fab fa-github fa-lg"></i>Github</li></a>
-
                     <a href="https://bitbucket.org/4oh3/"><li><i class="fab fa-bitbucket fa-lg"></i>BitBucket</li></a>
                 </ul>
-
             </div>
         </nav>
 
@@ -66,11 +58,12 @@
         </div>
     </section>
 
+ <section class="skill-section">
     <div class="skill-container wrapper" id="projects">
         <div class="skill-text">
             <h1>My Skills</h1>
             <p>Go ahead, click one!
-                <br>These are a show of some of the technologies that we concentrated on for the duration of the course at SAIT.</p>
+                <br>These are a show of some of the technologies that were focused on during my course at SAIT. Click one to view a project </p>
         </div>
         <div class="skill-grid">
             <div id="html" class="skill-box hvr-bob hvr-sweep-to-top">
@@ -149,30 +142,25 @@
             </div>
         </div>
     </div>
+    </section>
 
-        <div class="project-container">
-            <div id="project" class="project wrapper">
-                <div class="project-box html"><span class="project-title">HTML</span></div>
-                <div class="project-box css">CSS</div>
-                <div class="project-box sass">SASS</div>
-                <div class="project-box javascript">JavaScript</div>
-                <div class="project-box php">PHP</div>
-                <div class="project-box mysql">MySQL</div>
-                <div class="project-box wordpress">Wordpress</div>
-                <div class="project-box jquery">Jquery</div>
-                <div class="project-box bootstrap">Bootstrap</div>
-            </div>
+    <div class="project-container">
+        <div id="project" class="project wrapper">
+            <div class="project-box html"><span class="project-title">HTML</span></div>
+            <div class="project-box css">CSS</div>
+            <div class="project-box sass">SASS</div>
+            <div class="project-box javascript">JavaScript</div>
+            <div class="project-box php">PHP</div>
+            <div class="project-box mysql">MySQL</div>
+            <div class="project-box wordpress">Wordpress</div>
+            <div class="project-box jquery">Jquery</div>
+            <div class="project-box bootstrap">Bootstrap</div>
         </div>
+    </div>
 
-        <!-- <div class="contact-container wrapper">
-        <h1>Let's Get In Touch</h1>
-        <p>Send me an email with any inquires you have.</p>
-        <input type="text" placeholder="Email*">
-        <input type="text" placeholder="Name*">
-        <input type="text" placeholder="Subject">
-        <textarea placeholder="Message*"></textarea>
-        <a href="#">Send</a>
-    </div> -->
+    <section class="contact-container">
+
+    </section>
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="https://code.jquery.com/jquery-3.3.1.js"
