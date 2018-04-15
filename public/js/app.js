@@ -103,6 +103,29 @@ module.exports = __webpack_require__(43);
 //  //  //  //  //  //  My JS  //  //  //  //  //  //
 
 /* - - - - - - - - - - - - - - - - - - - - - -
+Google Maps
+- - - - - - - - - - - - - - - - - - - - - - */
+
+function initMap() {
+    var location = {
+        lat: 51.048615,
+        lng: -114.070846
+    };
+
+    var options = {
+        zoom: 12,
+        center: location
+    };
+
+    var map = new google.maps.Map(document.getElementById('map'), options);
+
+    var marker = new google.maps.Marker({
+        position: location,
+        map: map
+    });
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - -
 General / Cleanups
 - - - - - - - - - - - - - - - - - - - - - - */
 
@@ -110,6 +133,7 @@ General / Cleanups
 
 $(document).ready(function () {
     $(this).scrollTop(0);
+    initMap();
 });
 
 /* - - - - - - - - - - - - - - - - - - - - - -
@@ -120,7 +144,7 @@ $('.skill-box').click(function () {
     $('.project-container').fadeIn('slow');
 
     $('html, body').animate({
-        scrollTop: $(".project-container").offset().top
+        scrollTop: $(".project-container").offset().top - 160
     }, 750);
 });
 
@@ -160,14 +184,16 @@ Animate Scrolling when Link is Clicked
 $('.projects').click(function () {
     $('#projects').fadeIn('slow');
 
-    $('html, body').animate({ scrollTop: $("#projects").offset().top
+    $('html, body').animate({
+        scrollTop: $("#projects").offset().top
     }, 750);
 });
 
 $('.contact').click(function () {
     $('#contact').fadeIn('slow');
 
-    $('html, body').animate({ scrollTop: $("#contact").offset().top
+    $('html, body').animate({
+        scrollTop: $("#contact").offset().top
     }, 750);
 });
 
@@ -178,14 +204,16 @@ Remove / Add Title & Click Me Text & Background on hover / unhover
 - - - - - - - - - - - - - - - - - - - - - - */
 
 $('.project-box').mouseenter(function () {
-    $('.project-title, .click-me').fadeOut('slow');
+    $('.project-title, .click-me').fadeOut('fast');
 });
 
 $('.project-box').mouseleave(function () {
-    $('.project-title, .click-me').fadeIn('slow');
+    $('.project-title, .click-me').fadeIn('fast');
 });
 
 // TODO: Remove background-color (slowly) on mouseenter & vise versa on mouseleave
+
+// TODO: Stop hover event from continualy firing
 
 /***/ }),
 

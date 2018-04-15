@@ -62,8 +62,8 @@
         <div class="skill-text">
             <h1>My Skills</h1>
             <p>Go ahead, click one!
-            <br>These are a show of some of the technologies that were focused on during my course at SAIT. Click one to view a project I've done with the corresponding technology.</p>
-        </div>
+                <br>These are a show of some of the technologies that were focused on during my course at SAIT. Click one to view a project I've done with the corresponding technology.</p>
+            </div>
             <div class="skill-grid">
                 <div id="html" class="skill-box hvr-bob hvr-sweep-to-top">
                     <div class="inner-box">
@@ -184,22 +184,29 @@
         </div>
 
         <section class="contact-container" id="contact">
+
+            <div id="map"></div>
+            <div class="contact-form">
+
+            </div>
             {{-- ADD EMAIL ADDRESS - AS PER REQUIRED --}}
+
         </section>
 
-        <section class="">
-            {{-- Google Maps API for location Calgary --}}
-        </section>
 
-        <!-- jQuery first, then Tether, then Bootstrap JS. -->
+        <!-- - - - - - - - - - - - - - - Scripts - - - - - - - - - - - - - - -->
+
         <script src="https://code.jquery.com/jquery-3.3.1.js"
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
         crossorigin="anonymous"></script>
 
-        <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script> -->
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDReZovdgRSEeRtGtFcucwQldMm_JhDbBk&callback=initMap"
+        type="text/javascript"></script>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
         <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
         <script src="/js/app.js"></script>
