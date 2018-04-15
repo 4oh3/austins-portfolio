@@ -10787,7 +10787,7 @@ h3 {
   /* margin: 0 auto; */
 }
 
-@media (max-width: 852px) {
+@media (max-width: 892px) {
   .skill-container {
     display: block;
   }
@@ -10799,7 +10799,7 @@ h3 {
   .skill-text {
     width: 100%;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 20px 20px;
   }
 
   .inner-box {

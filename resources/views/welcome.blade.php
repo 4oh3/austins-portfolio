@@ -20,7 +20,7 @@
         <nav class="mobile-nav">
             <div class="mobile-nav-toggle">
 
-                <input class="toggle" type="checkbox" />
+                <input class="toggle" type="checkbox"/>
 
                 {{-- Hamburger Menu --}}
                 <span></span>
