@@ -89,7 +89,21 @@ $('.contact').click(function(){
     $('#contact').fadeIn('slow');
 
     $('html, body').animate({scrollTop: $("#contact").offset().top
-    }, 750);
+}, 750);
 });
 
 // TODO: Make above into a function that takes an argument / parameter? - it's repeated 3+ times.
+
+/* - - - - - - - - - - - - - - - - - - - - - -
+Remove / Add Title & Click Me Text & Background on hover / unhover
+- - - - - - - - - - - - - - - - - - - - - - */
+
+$('.project-box').mouseenter(function(){
+    $('.project-title, .click-me').fadeOut('slow');
+});
+
+$('.project-box').mouseleave(function(){
+    $('.project-title, .click-me').fadeIn('slow');
+});
+
+// TODO: Remove background-color (slowly) on mouseenter & vise versa on mouseleave

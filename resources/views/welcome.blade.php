@@ -58,125 +58,150 @@
         </div>
     </section>
 
- <section class="skill-section">
     <div class="skill-container wrapper" id="projects">
         <div class="skill-text">
             <h1>My Skills</h1>
             <p>Go ahead, click one!
-                <br>These are a show of some of the technologies that were focused on during my course at SAIT. Click one to view a project </p>
+            <br>These are a show of some of the technologies that were focused on during my course at SAIT. Click one to view a project I've done with the corresponding technology.</p>
         </div>
-        <div class="skill-grid">
-            <div id="html" class="skill-box hvr-bob hvr-sweep-to-top">
-                <div class="inner-box">
-                    <div class="caption">
-                        <i class="fab fa-html5 fa-4x"></i>
-                        <h2>HTML5</h2>
+            <div class="skill-grid">
+                <div id="html" class="skill-box hvr-bob hvr-sweep-to-top">
+                    <div class="inner-box">
+                        <div class="caption">
+                            <i class="fab fa-html5 fa-4x"></i>
+                            <h2>HTML5</h2>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div id="css" class="skill-box hvr-bob hvr-sweep-to-top">
-                <div class="inner-box">
-                    <i class="fab fa-css3-alt fa-4x"></i>
-                    <div class="caption">
-                        <h2>CSS</h2>
+                <div id="css" class="skill-box hvr-bob hvr-sweep-to-top">
+                    <div class="inner-box">
+                        <i class="fab fa-css3-alt fa-4x"></i>
+                        <div class="caption">
+                            <h2>CSS</h2>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div id="sass" class="skill-box hvr-bob hvr-sweep-to-top">
-                <div class="inner-box">
-                    <div class="caption">
-                        <i class="fab fa-sass fa-4x"></i>
-                        <h2>SASS</h2>
+                <div id="sass" class="skill-box hvr-bob hvr-sweep-to-top">
+                    <div class="inner-box">
+                        <div class="caption">
+                            <i class="fab fa-sass fa-4x"></i>
+                            <h2>SASS</h2>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div id="javascript" class="skill-box hvr-bob hvr-sweep-to-top">
-                <div class="inner-box">
-                    <div class="caption">
-                        <i class="fab fa-js fa-4x"></i>
-                        <h2>JavaScript</h2>
+                <div id="javascript" class="skill-box hvr-bob hvr-sweep-to-top">
+                    <div class="inner-box">
+                        <div class="caption">
+                            <i class="fab fa-js fa-4x"></i>
+                            <h2>JavaScript</h2>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div id="php" class="skill-box hvr-bob hvr-sweep-to-top">
-                <div class="inner-box">
-                    <div class="caption">
-                        <i class="fab fa-php fa-4x"></i>
-                        <h2>PHP</h2>
+                <div id="php" class="skill-box hvr-bob hvr-sweep-to-top">
+                    <div class="inner-box">
+                        <div class="caption">
+                            <i class="fab fa-php fa-4x"></i>
+                            <h2>PHP</h2>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div id="mysql" class="skill-box hvr-bob hvr-sweep-to-top">
-                <div class="inner-box">
-                    <div class="caption">
-                        <i class="fas fa-database fa-4x"></i>
-                        <h2>MySQL</h2>
+                <div id="mysql" class="skill-box hvr-bob hvr-sweep-to-top">
+                    <div class="inner-box">
+                        <div class="caption">
+                            <i class="fas fa-database fa-4x"></i>
+                            <h2>MySQL</h2>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div id="wordpress" class="skill-box hvr-bob hvr-sweep-to-top">
-                <div class="inner-box">
-                    <div class="caption">
-                        <i class="fab fa-wordpress-simple fa-4x"></i>
-                        <h2>WordPress</h2>
+                <div id="wordpress" class="skill-box hvr-bob hvr-sweep-to-top">
+                    <div class="inner-box">
+                        <div class="caption">
+                            <i class="fab fa-wordpress-simple fa-4x"></i>
+                            <h2>WordPress</h2>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div id="jquery" class="skill-box hvr-bob hvr-sweep-to-top">
-                <div class="inner-box">
-                    <div class="caption">
-                        <i class="fas fa-book fa-4x"></i>
-                        <h2>Libraries</h2>
-                        <h3>- JQuery</h3>
+                <div id="jquery" class="skill-box hvr-bob hvr-sweep-to-top">
+                    <div class="inner-box">
+                        <div class="caption">
+                            <i class="fas fa-book fa-4x"></i>
+                            <h2>Libraries</h2>
+                            <h3>- JQuery</h3>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div id="bootstrap" class="skill-box hvr-bob hvr-sweep-to-top">
-                <div class="inner-box">
-                    <div class="caption">
-                        <i class="fas fa-cogs fa-4x"></i>
-                        <h2>Frameworks</h2>
-                        <h3>- Bootstrap</h3>
+                <div id="bootstrap" class="skill-box hvr-bob hvr-sweep-to-top">
+                    <div class="inner-box">
+                        <div class="caption">
+                            <i class="fas fa-cogs fa-4x"></i>
+                            <h2>Frameworks</h2>
+                            <h3>- Bootstrap</h3>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    </section>
 
-    <div class="project-container">
-        <div id="project" class="project wrapper">
-            <div class="project-box html"><span class="project-title">HTML</span></div>
-            <div class="project-box css">CSS</div>
-            <div class="project-box sass">SASS</div>
-            <div class="project-box javascript">JavaScript</div>
-            <div class="project-box php">PHP</div>
-            <div class="project-box mysql">MySQL</div>
-            <div class="project-box wordpress">Wordpress</div>
-            <div class="project-box jquery">Jquery</div>
-            <div class="project-box bootstrap">Bootstrap</div>
+        <div class="project-container">
+            <div id="project" class="project wrapper">
+                <div class="project-box html">
+                    <div class="project-title">HTML / CSS Assignment</div>
+                    <div class="click-me">Click to view details.</div>
+                </div>
+                <div class="project-box css">
+                    <div class="project-title">CSS / HTML Assignment</div>
+                    <div class="click-me">Click to view details.</div>
+                </div>
+                <div class="project-box sass">
+                    <div class="project-title">SASS Assignment</div>
+                    <div class="click-me">Click to view details.</div>
+                </div>
+                <div class="project-box javascript">
+                    <div class="project-title">JavaScript Assignment</div>
+                    <div class="click-me">Click to view details.</div>
+                </div>
+                <div class="project-box php">
+                    <div class="project-title">PHP Assignment</div>
+                    <div class="click-me">Click to view details.</div>
+                </div>
+                <div class="project-box mysql">
+                    <div class="project-title">MySql Assignment</div>
+                    <div class="click-me">Click to view details.</div>
+                </div>
+                <div class="project-box wordpress">
+                    <div class="project-title">WordPress Assignment</div>
+                    <div class="click-me">Click to view details.</div>
+                </div>
+                <div class="project-box jquery">
+                    <div class="project-title">JQuery Assignment</div>
+                    <div class="click-me">Click to view details.</div>
+                </div>
+                <div class="project-box bootstrap">
+                    <div class="project-title">Bootstrap Assignment</div>
+                    <div class="click-me">Click to view details.</div>
+                </div>
+            </div>
         </div>
-    </div>
 
-    <section class="contact-container" id="contact">
-        {{-- ADD EMAIL ADDRESS - AS PER REQUIRED --}}
-    </section>
+        <section class="contact-container" id="contact">
+            {{-- ADD EMAIL ADDRESS - AS PER REQUIRED --}}
+        </section>
 
-    <section class="">
-        {{-- Google Maps API for location Calgary --}}
-    </section>
+        <section class="">
+            {{-- Google Maps API for location Calgary --}}
+        </section>
 
-    <!-- jQuery first, then Tether, then Bootstrap JS. -->
-    <script src="https://code.jquery.com/jquery-3.3.1.js"
-    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-    crossorigin="anonymous"></script>
+        <!-- jQuery first, then Tether, then Bootstrap JS. -->
+        <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
 
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script> -->
+        <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script> -->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
-    <script src="/js/app.js"></script>
-</body>
-</html>
+        <script src="/js/app.js"></script>
+    </body>
+    </html>

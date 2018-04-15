@@ -276,10 +276,6 @@ Hero
 My Skills
 - - - - - - - - - - - - - - - - - - - - - - */
 
-.skill-section {
-    // TODO: Add box-shadow to bottom (inset?) - If not: remove .skill-section <div> in HTML
-}
-
 .skill-container {
     display: flex;
     margin: auto;
@@ -367,31 +363,87 @@ Projects
 
 .project-container {
     display: none;
-    height: 35vh;
+    height: 50vh;
     background-color: #0d47a1;
+    box-shadow: inset 0 19px 38px -12px rgba(0,0,0,0.30), inset 0 15px 12px -12px rgba(0,0,0,0.22);
+    // box-shadow: inset 0 8px 6px -6px black;
 }
 
 .project {
     padding: 20px;
 }
 
-.project-box {
-    width: 100%;
-    height: 30vh;
-    text-align: center;
-    border-radius: 3px;
-}
 
 .html {
     background: url("/images/4-page-assignment.jpg") no-repeat;
+}
+
+.css {
+    background: url("/images/4-page-assignment.jpg") no-repeat;
+}
+
+.sass {
+    background: url("/images/4-page-assignment.jpg") no-repeat;
+}
+
+.javascript {
+    background: url("/images/4-page-assignment.jpg") no-repeat;
+}
+
+.php {
+    background: url("/images/4-page-assignment.jpg") no-repeat;
+}
+
+.mysql {
+    background: url("/images/4-page-assignment.jpg") no-repeat;
+}
+
+.wordpress {
+    background: url("/images/4-page-assignment.jpg") no-repeat;
+}
+
+.jquery {
+    background: url("/images/4-page-assignment.jpg") no-repeat;
+}
+
+.bootstrap {
+    background: url("/images/4-page-assignment.jpg") no-repeat;
+}
+
+.project-box {
+    width: 100%;
+    height: 45vh;
+    text-align: center;
+    border-radius: 5px;
     background-size: cover;
+    background-color: rgba(0, 0, 0, 0.75);
+    background-blend-mode: multiply;
+}
+
+.html:hover,
+.css:hover,
+.sass:hover,
+.javascript:hover,
+.php:hover,
+.mysql:hover,
+.wordpress:hover,
+.jquery:hover,
+.bootstrap:hover {
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
 }
 
 .project-title {
     font-family: 'Oswald', sans-serif;
-    font-size: 20px;
+    font-size: 35px;
     color: white;
-    background-color: rgba(255, 255, 255, .25);
+    padding-top: 17.5vh;
+}
+
+.click-me {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.75);
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - -
@@ -403,6 +455,7 @@ Contact
     margin: auto;
     height: 50vh;
     background-color: #b3b3b3;
+    box-shadow: inset 0 19px 38px -12px rgba(0,0,0,0.30), inset 0 15px 12px -12px rgba(0,0,0,0.22);
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - -
