@@ -45,13 +45,6 @@ $('.skill-box').click(function(){
     }, 750);
 });
 
-$('.projects').click(function(){
-    $('#projects').fadeIn('slow');
-
-    $('html, body').animate({scrollTop: $("#projects").offset().top
-    }, 750);
-});
-
 /* - - - - - - - - - - - - - - - - - - - - - -
 Show Project Relevant to Skill Clicked
 - - - - - - - - - - - - - - - - - - - - - - */
@@ -80,3 +73,23 @@ $('.mobile-menu, .skill-container').click(function() {
 $(document).scroll(function() {
     uncheckCheckbox();
 });
+
+/* - - - - - - - - - - - - - - - - - - - - - -
+Animate Scrolling when Link is Clicked
+- - - - - - - - - - - - - - - - - - - - - - */
+
+$('.projects').click(function(){
+    $('#projects').fadeIn('slow');
+
+    $('html, body').animate({scrollTop: $("#projects").offset().top
+}, 750);
+});
+
+$('.contact').click(function(){
+    $('#contact').fadeIn('slow');
+
+    $('html, body').animate({scrollTop: $("#contact").offset().top
+    }, 750);
+});
+
+// TODO: Make above into a function that takes an argument / parameter? - it's repeated 3+ times.

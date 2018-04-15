@@ -43,7 +43,7 @@
                 <li><a href="/">Home</a></li>
                 <li><a class="projects" href="#projects">Projects</a></li>
                 <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a class="contact" href="#contact">Contact</a></li>
             </ul>
             <ul>
                 <li><a href="https://www.instagram.com/4oh3/"><i class="fab fa-instagram fa-lg"></i></a></li>
@@ -158,8 +158,12 @@
         </div>
     </div>
 
-    <section class="contact-container">
+    <section class="contact-container" id="contact">
+        {{-- ADD EMAIL ADDRESS - AS PER REQUIRED --}}
+    </section>
 
+    <section class="">
+        {{-- Google Maps API for location Calgary --}}
     </section>
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
