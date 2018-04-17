@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
     <title>Austin Smith - Portfolio</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
@@ -184,14 +186,48 @@
         </div>
 
         <section class="contact-container" id="contact">
-
-            <div id="map"></div>
             <div class="contact-form">
 
-            </div>
-            {{-- ADD EMAIL ADDRESS - AS PER REQUIRED --}}
 
+                @if(session('message'))
+                    <div class='alert alert-success'>
+                        {{ session('message') }}
+                    </div>
+                @endif
+
+                <div class="col-12 col-md-6">
+                    <form class="form-horizontal" method="POST" action="/contact">
+                        {{ csrf_field() }}
+                        <div class="form-group">
+                            <label for="Name">Name: </label>
+                            <input type="text" class="form-control" id="name" placeholder="Your name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email: </label>
+                            <input type="text" class="form-control" id="email" placeholder="john@example.com" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message: </label>
+                            <textarea type="text" class="form-control luna-message" id="message" placeholder="Message" name="message" required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary" value="Send">Send</button>
+                        </div>
+                    </form>
+                </div>
+
+
+            </div>
+            <div class="google-map">
+
+            <div id="map"></div>
+        </div>
+            {{-- ADD EMAIL ADDRESS - AS PER REQUIRED --}}
         </section>
+
 
 
         <!-- - - - - - - - - - - - - - - Scripts - - - - - - - - - - - - - - -->
@@ -209,6 +245,12 @@
 
         <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
-        <script src="/js/app.js"></script>
-    </body>
-    </html>
+        <script>
+            window.Laravel = {!! json_encode([
+                'csrfToken' => csrf_token(),
+                ]) !!};
+            </script>
+
+            <script src="/js/app.js"></script>
+        </body>
+        </html>

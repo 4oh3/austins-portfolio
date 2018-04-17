@@ -10437,6 +10437,11 @@ Desktop Nav
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: fixed;
+  -webkit-transition: background 500ms;
+  transition: background 500ms;
+  width: 100%;
+  z-index: 1;
 }
 
 .desktop-nav ul {
@@ -10683,7 +10688,7 @@ Hero
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 22.5vh;
+  padding-top: 30vh;
 }
 
 .hero-text h1 {
@@ -10696,6 +10701,12 @@ Hero
   font-size: 27px;
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
+}
+
+@media (max-width: 842px) {
+  .hero-text {
+    padding-top: 22.5vh;
+  }
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - -
@@ -10906,16 +10917,37 @@ Contact
   background-color: #b3b3b3;
   -webkit-box-shadow: inset 0 19px 38px -12px rgba(0, 0, 0, 0.3), inset 0 15px 12px -12px rgba(0, 0, 0, 0.22);
           box-shadow: inset 0 19px 38px -12px rgba(0, 0, 0, 0.3), inset 0 15px 12px -12px rgba(0, 0, 0, 0.22);
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.google-map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 50%;
+}
+
+.contact-form {
+  font-family: 'Oswald', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - -
-Google Map
+Google Maps
 - - - - - - - - - - - - - - - - - - - - - - */
 
 #map {
   height: 45vh;
   width: 50%;
   border-radius: 5px;
+  z-index: 2;
+  position: absolute;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - -

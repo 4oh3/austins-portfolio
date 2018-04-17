@@ -60,21 +60,19 @@
 /******/ 	__webpack_require__.p = "/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 11);
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
-/******/ ({
-
-/***/ 11:
+/******/ ([
+/* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(12);
-module.exports = __webpack_require__(43);
+__webpack_require__(1);
+module.exports = __webpack_require__(2);
 
 
 /***/ }),
-
-/***/ 12:
+/* 1 */
 /***/ (function(module, exports) {
 
 
@@ -144,7 +142,7 @@ $('.skill-box').click(function () {
     $('.project-container').fadeIn('slow');
 
     $('html, body').animate({
-        scrollTop: $(".project-container").offset().top - 160
+        scrollTop: $(".project-container").offset().top - 180
     }, 750);
 });
 
@@ -215,13 +213,20 @@ $('.project-box').mouseleave(function () {
 
 // TODO: Stop hover event from continualy firing
 
-/***/ }),
+$(window).scroll(function () {
+    var scroll = $(window).scrollTop();
+    if (scroll > 50) {
+        $(".desktop-nav").css("background", "#0d47a1");
+    } else {
+        $(".desktop-nav").css("background", "");
+    }
+});
 
-/***/ 43:
+/***/ }),
+/* 2 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ })
-
-/******/ });
+/******/ ]);

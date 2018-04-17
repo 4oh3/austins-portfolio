@@ -14,3 +14,12 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+*/
+
+Route::get('/contact', 'ContactController@show');
+Route::post('/contact',  'ContactController@mailToAdmin'); 

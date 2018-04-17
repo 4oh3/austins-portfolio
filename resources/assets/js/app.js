@@ -65,7 +65,7 @@ $('.skill-box').click(function(){
     $('.project-container').fadeIn('slow');
 
     $('html, body').animate({
-        scrollTop: $(".project-container").offset().top-160
+        scrollTop: $(".project-container").offset().top-180
     }, 750);
 });
 
@@ -107,7 +107,7 @@ $('.projects').click(function(){
 
     $('html, body').animate({
         scrollTop: $("#projects").offset().top
-}, 750);
+    }, 750);
 });
 
 $('.contact').click(function(){
@@ -115,7 +115,7 @@ $('.contact').click(function(){
 
     $('html, body').animate({
         scrollTop: $("#contact").offset().top
-}, 750);
+    }, 750);
 });
 
 // TODO: Make above into a function that takes an argument / parameter? - it's repeated 3+ times.
@@ -135,3 +135,13 @@ $('.project-box').mouseleave(function(){
 // TODO: Remove background-color (slowly) on mouseenter & vise versa on mouseleave
 
 // TODO: Stop hover event from continualy firing
+
+$(window).scroll(function(){
+    var scroll = $(window).scrollTop();
+    if (scroll > 50) {
+        $(".desktop-nav").css("background", "#0d47a1");
+    }
+    else {
+        $(".desktop-nav").css("background", "");
+    }
+})
