@@ -461,9 +461,9 @@ Contact
 - - - - - - - - - - - - - - - - - - - - - - */
 
 .contact-container {
-    display: flex;
+    // display: flex;
     margin: auto;
-    height: 55vh;
+    height: 60vh;
     background-color: #9A9A9A;
     box-shadow: inset 0 19px 38px -12px rgba(0,0,0,0.30), inset 0 15px 12px -12px rgba(0,0,0,0.22);
     padding-top: 40px;
@@ -478,75 +478,96 @@ Contact
     margin-bottom: 25px;
 }
 
-.google-map {
-    display: flex;
-    flex-wrap: wrap;
-    width: 50%;
-}
+// .google-map {
+    //     display: flex;
+    //     flex-wrap: wrap;
+    //     width: 50%;
+    // }
 
-.contact-form{
-    font-family: 'Oswald', sans-serif;
-    font-size: 20px;
-    color: white;
-    display: flex;
-    width: 50%;
-    height: 55%;
-}
-
-.form-text {
-    color: black;
-}
-
-// TODO: Possible glitch on low res screens (galaxy s5, iphone 5, etc.) with contact containter - map overlaps send button (possible z-index, display:block?, ...)
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-    color: black;
-}
-
-.contact-form textarea, .contact-form input {
-color: black;
-}
-
-.btn-primary {
-    background-color: #0d47a1;
-    border: #0d47a1;
-    font-size: 17.5px;
-    width: 100%;
-}
-
-// Google Maps
-
-#map {
-    height: 100%;
-    width: 100%;
-    border-radius: 5px;
-    z-index: 2;
-    // position: absolute
-}
-
-//
-
-@media (max-width: 892px) {
-    .contact-container {
-        display: block;
-    }
-    .contact-form {
-        width: 100%;
-        display: block;
-    }
-    .google-map {
-        width: 100%;
+    .contact-form{
+        font-family: 'Oswald', sans-serif;
+        font-size: 20px;
+        color: white;
+        // display: flex;
+        width: 50%;
+        // height: 55%;
         height: 45vh;
     }
-    .contact-container {
-        height: 100vh;
-    }
-    #map {
-        height: 90%;
-    }
-}
 
-/* - - - - - - - - - - - - - - - - - - - - - -
-About
-- - - - - - - - - - - - - - - - - - - - - - */
+    .contact-form h1,
+    .contact-form h4 {
+        font-family: 'PT Sans Narrow', sans-serif;
+        text-transform: uppercase;
+    }
+
+    .form-text {
+        color: black;
+    }
+
+    // TODO: Possible glitch on low res screens (galaxy s5, iphone 5, etc.) with contact containter - map overlaps send button (possible z-index, display:block?, ...)
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+        color: black;
+    }
+
+    .contact-form textarea, .contact-form input {
+        color: black;
+    }
+
+    .btn-primary {
+        background-color: #0d47a1;
+        border: #0d47a1;
+        font-size: 17.5px;
+        width: 100%;
+    }
+
+    .btn {
+        margin-bottom: 20px;
+    }
+
+    // Google Maps
+
+    #map {
+        display: block;
+        height: 100%;
+        width: 100%;
+        // border-radius: 5px;
+    }
+
+    //
+
+    @media (max-width: 892px) {
+        .contact-container {
+            display: block;
+        }
+        .contact-form {
+            width: 100%;
+        }
+        .google-map {
+            width: 100%;
+            height: 45vh;
+        }
+        .contact-container {
+            height: 100vh;
+        }
+        #map {
+            height: 85%;
+        }
+    }
+
+    /* - - - - - - - - - - - - - - - - - - - - - -
+    About
+    - - - - - - - - - - - - - - - - - - - - - - */
+
+    .small-text{
+        font-family: 'Oswald', sans-serif;
+        font-size: 20px;
+        color: white;
+        text-align: center;
+    }
+
+    .map-section {
+        height: 25vh;
+        box-shadow: inset 0 19px 38px -12px rgba(0,0,0,0.30), inset 0 15px 12px -12px rgba(0,0,0,0.22);
+    }

@@ -185,6 +185,8 @@
             </div>
         </div>
 
+        <?php // TODO: Fix memory of alert alert-warning? ?>
+
         <section class="contact-container" id="contact">
             <div class="contact-form wrapper">
 
@@ -195,6 +197,10 @@
                 @endif
 
                 <div class="col-12 col-md-12">
+
+                    <h1>Let's get in touch!</h1>
+                    <h4>Send me a message with any inquiries you have.</h4>
+
                     <form class="form-horizontal" method="POST" action="/contact">
                         {{ csrf_field() }}
                         <div class="form-group">
@@ -205,7 +211,7 @@
                         <div class="form-group">
                             <label for="email">Email: </label>
                             <input type="text" class="form-control" id="email" name="email" required>
-                            <small class="form-text">Rather email me directly? – austinsmiht@gmail.com</small>
+                            {{-- <small class="form-text">Rather email me directly? – austinsmiht@gmail.com</small> --}}
                         </div>
 
                         <div class="form-group">
@@ -215,16 +221,19 @@
 
                         <div class="form-group">
                             <button type="submit" class="btn btn-primary" value="Send">Send</button>
+
+                            <button class="btn btn-default" type="button" name="button" value="Rather email me directly?" onclick="window.location.href='mailto:austinsmiht@gmail.com'" >Rather email me directly?</button>
                         </div>
                     </form>
                 </div>
             </div>
-            <div class="google-map wrapper">
-                <div id="map"></div>
-            </div>
         </section>
 
-
+    <section class="map-section">
+        {{-- <div class="google-map"> --}}
+            <div id="map"></div>
+        {{-- </div> --}}
+    </section>
         <!-- - - - - - - - - - - - - - - Scripts - - - - - - - - - - - - - - -->
 
         <script src="https://code.jquery.com/jquery-3.3.1.js"

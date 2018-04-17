@@ -10905,11 +10905,8 @@ Contact
 - - - - - - - - - - - - - - - - - - - - - - */
 
 .contact-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin: auto;
-  height: 55vh;
+  height: 60vh;
   background-color: #9A9A9A;
   -webkit-box-shadow: inset 0 19px 38px -12px rgba(0, 0, 0, 0.3), inset 0 15px 12px -12px rgba(0, 0, 0, 0.22);
           box-shadow: inset 0 19px 38px -12px rgba(0, 0, 0, 0.3), inset 0 15px 12px -12px rgba(0, 0, 0, 0.22);
@@ -10925,24 +10922,18 @@ Contact
   margin-bottom: 25px;
 }
 
-.google-map {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 50%;
-}
-
 .contact-form {
   font-family: 'Oswald', sans-serif;
   font-size: 20px;
   color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 50%;
-  height: 55%;
+  height: 45vh;
+}
+
+.contact-form h1,
+.contact-form h4 {
+  font-family: 'PT Sans Narrow', sans-serif;
+  text-transform: uppercase;
 }
 
 .form-text {
@@ -10966,11 +10957,14 @@ Contact
   width: 100%;
 }
 
+.btn {
+  margin-bottom: 20px;
+}
+
 #map {
+  display: block;
   height: 100%;
   width: 100%;
-  border-radius: 5px;
-  z-index: 2;
 }
 
 @media (max-width: 892px) {
@@ -10980,7 +10974,6 @@ Contact
 
   .contact-form {
     width: 100%;
-    display: block;
   }
 
   .google-map {
@@ -10993,11 +10986,24 @@ Contact
   }
 
   #map {
-    height: 90%;
+    height: 85%;
   }
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - -
-About
-- - - - - - - - - - - - - - - - - - - - - - */
+    About
+    - - - - - - - - - - - - - - - - - - - - - - */
+
+.small-text {
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+
+.map-section {
+  height: 25vh;
+  -webkit-box-shadow: inset 0 19px 38px -12px rgba(0, 0, 0, 0.3), inset 0 15px 12px -12px rgba(0, 0, 0, 0.22);
+          box-shadow: inset 0 19px 38px -12px rgba(0, 0, 0, 0.3), inset 0 15px 12px -12px rgba(0, 0, 0, 0.22);
+}
 
