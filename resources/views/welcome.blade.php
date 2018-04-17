@@ -186,8 +186,7 @@
         </div>
 
         <section class="contact-container" id="contact">
-            <div class="contact-form">
-
+            <div class="contact-form wrapper">
 
                 @if(session('message'))
                     <div class='alert alert-success'>
@@ -195,22 +194,23 @@
                     </div>
                 @endif
 
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-12">
                     <form class="form-horizontal" method="POST" action="/contact">
                         {{ csrf_field() }}
                         <div class="form-group">
                             <label for="Name">Name: </label>
-                            <input type="text" class="form-control" id="name" placeholder="Your name" name="name" required>
+                            <input type="text" class="form-control" id="name" name="name" required>
                         </div>
 
                         <div class="form-group">
                             <label for="email">Email: </label>
-                            <input type="text" class="form-control" id="email" placeholder="john@example.com" name="email" required>
+                            <input type="text" class="form-control" id="email" name="email" required>
+                            <small class="form-text">Rather email me directly? – austinsmiht@gmail.com</small>
                         </div>
 
                         <div class="form-group">
                             <label for="message">Message: </label>
-                            <textarea type="text" class="form-control luna-message" id="message" placeholder="Message" name="message" required></textarea>
+                            <textarea type="text" class="form-control luna-message" id="message" name="message" required></textarea>
                         </div>
 
                         <div class="form-group">
@@ -218,16 +218,11 @@
                         </div>
                     </form>
                 </div>
-
-
             </div>
-            <div class="google-map">
-
-            <div id="map"></div>
-        </div>
-            {{-- ADD EMAIL ADDRESS - AS PER REQUIRED --}}
+            <div class="google-map wrapper">
+                <div id="map"></div>
+            </div>
         </section>
-
 
 
         <!-- - - - - - - - - - - - - - - Scripts - - - - - - - - - - - - - - -->
@@ -254,3 +249,5 @@
             <script src="/js/app.js"></script>
         </body>
         </html>
+
+        <?php // TODO: Run through spell checker ?>

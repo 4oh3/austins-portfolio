@@ -183,7 +183,7 @@ $('.projects').click(function () {
     $('#projects').fadeIn('slow');
 
     $('html, body').animate({
-        scrollTop: $("#projects").offset().top
+        scrollTop: $("#projects").offset().top - 75
     }, 750);
 });
 
