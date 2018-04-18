@@ -266,7 +266,7 @@ Hero
 
 .hero-text h1 {
     font-size: 60px;
-    font-style: oblique;
+    // font-style: oblique;
     /* line-height: 45px; */
 }
 
@@ -278,7 +278,7 @@ Hero
 
 @media (max-width: 842px) {
     .hero-text {
-        padding-top: 22.5vh;
+        padding-top: 15vh;
     }
 }
 
@@ -312,7 +312,7 @@ h3 {
 
 .skill-container h1 {
     font-size: 60px;
-    font-style: oblique;
+    // font-style: oblique;
 }
 
 .skill-container p {
@@ -385,39 +385,39 @@ Projects
 
 
 .html {
-    background: url("/images/4-page-assignment.jpg") no-repeat;
+    background: url("/images/html-css-project.jpg") no-repeat;
 }
 
 .css {
-    background: url("/images/4-page-assignment.jpg") no-repeat;
+    background: url("/images/html-css-project.jpg") no-repeat;
 }
 
 .sass {
-    background: url("/images/4-page-assignment.jpg") no-repeat;
+    background: url("/images/sass-project.jpg") no-repeat;
 }
 
 .javascript {
-    background: url("/images/4-page-assignment.jpg") no-repeat;
+    background: url("/images/jquery-project.jpg") no-repeat center;
 }
 
 .php {
-    background: url("/images/4-page-assignment.jpg") no-repeat;
+    background: url("/images/php-mysql-project.jpg") no-repeat;
 }
 
 .mysql {
-    background: url("/images/4-page-assignment.jpg") no-repeat;
+    background: url("/images/php-mysql-project.jpg") no-repeat;
 }
 
 .wordpress {
-    background: url("/images/4-page-assignment.jpg") no-repeat;
+    background: url("/images/wordpress-project.jpg") no-repeat;
 }
 
 .jquery {
-    background: url("/images/4-page-assignment.jpg") no-repeat;
+    background: url("/images/jquery-project.jpg") no-repeat center;
 }
 
 .bootstrap {
-    background: url("/images/4-page-assignment.jpg") no-repeat;
+    background: url("/images/html-css-project.jpg") no-repeat;
 }
 
 .project-box {
@@ -461,13 +461,14 @@ Contact
 - - - - - - - - - - - - - - - - - - - - - - */
 
 .contact-container {
-    // display: flex;
+    display: flex;
     margin: auto;
-    height: 60vh;
+    height: 77.5vh;
     background-color: #9A9A9A;
     box-shadow: inset 0 19px 38px -12px rgba(0,0,0,0.30), inset 0 15px 12px -12px rgba(0,0,0,0.22);
     padding-top: 40px;
     padding-bottom: 40px;
+    overflow: hidden;
 }
 
 .contact-container .form-group {
@@ -478,96 +479,115 @@ Contact
     margin-bottom: 25px;
 }
 
-// .google-map {
-    //     display: flex;
-    //     flex-wrap: wrap;
-    //     width: 50%;
+.google-map {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.contact-form {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    color: white;
+    display: flex;
+    width: 50%;
+    height: 55%;
+}
+
+.contact-form h1,
+.contact-form h4 {
+    font-family: 'PT Sans Narrow', sans-serif;
+    text-transform: uppercase;
+}
+
+.contact-form h1 {
+    font-size: 50px;
+}
+
+.contact-form h4 {
+    font-size: 25px;
+}
+
+.form-text {
+    color: black;
+}
+
+// TODO: Possible glitch on low res screens (galaxy s5, iphone 5, etc.) with contact containter - map overlaps send button (possible z-index, display:block?, ...)
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    color: black;
+}
+
+.contact-form textarea, .contact-form input {
+    color: black;
+}
+
+.btn-primary {
+    background-color: #0d47a1;
+    border: #0d47a1;
+    font-size: 17.5px;
+    width: 100%;
+}
+
+.btn {
+    margin-bottom: 20px;
+}
+
+// Google Maps
+
+#map {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+}
+
+//
+
+@media (max-width: 892px) {
+    .contact-container {
+        display: block;
+    }
+    .contact-form {
+        width: 100%;
+    }
+    .google-map {
+        width: 100%;
+        height: 55vh;
+    }
+    .contact-container {
+        // height: 135vh;
+    }
+    #map {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 1114px) {
+    .contact-container {
+        height: 80vh;
+    }
+}
+
+@media (max-width: 908px) {
+    .contact-container {
+        height: 87.5vh;
+    }
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - -
+About
+- - - - - - - - - - - - - - - - - - - - - - */
+
+// .small-text{
+    //     font-family: 'Oswald', sans-serif;
+    //     font-size: 20px;
+    //     color: white;
+    //     text-align: center;
     // }
 
-    .contact-form{
-        font-family: 'Oswald', sans-serif;
-        font-size: 20px;
-        color: white;
-        // display: flex;
-        width: 50%;
-        // height: 55%;
-        height: 45vh;
-    }
-
-    .contact-form h1,
-    .contact-form h4 {
-        font-family: 'PT Sans Narrow', sans-serif;
-        text-transform: uppercase;
-    }
-
-    .form-text {
-        color: black;
-    }
-
-    // TODO: Possible glitch on low res screens (galaxy s5, iphone 5, etc.) with contact containter - map overlaps send button (possible z-index, display:block?, ...)
-
-    .contact-form input:focus,
-    .contact-form textarea:focus {
-        color: black;
-    }
-
-    .contact-form textarea, .contact-form input {
-        color: black;
-    }
-
-    .btn-primary {
-        background-color: #0d47a1;
-        border: #0d47a1;
-        font-size: 17.5px;
-        width: 100%;
-    }
-
-    .btn {
-        margin-bottom: 20px;
-    }
-
-    // Google Maps
-
-    #map {
-        display: block;
-        height: 100%;
-        width: 100%;
-        // border-radius: 5px;
-    }
-
-    //
-
-    @media (max-width: 892px) {
-        .contact-container {
-            display: block;
-        }
-        .contact-form {
-            width: 100%;
-        }
-        .google-map {
-            width: 100%;
-            height: 45vh;
-        }
-        .contact-container {
-            height: 100vh;
-        }
-        #map {
-            height: 85%;
-        }
-    }
-
-    /* - - - - - - - - - - - - - - - - - - - - - -
-    About
-    - - - - - - - - - - - - - - - - - - - - - - */
-
-    .small-text{
-        font-family: 'Oswald', sans-serif;
-        font-size: 20px;
-        color: white;
-        text-align: center;
-    }
-
-    .map-section {
-        height: 25vh;
-        box-shadow: inset 0 19px 38px -12px rgba(0,0,0,0.30), inset 0 15px 12px -12px rgba(0,0,0,0.22);
-    }
+    // .map-section {
+        //     height: 25vh;
+        //     box-shadow: inset 0 19px 38px -12px rgba(0,0,0,0.30), inset 0 15px 12px -12px rgba(0,0,0,0.22);
+        // }

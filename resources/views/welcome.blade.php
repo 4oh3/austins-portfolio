@@ -56,7 +56,7 @@
         </nav>
         <div class="hero-text wrapper">
             <h1>Austin Smith</h1>
-            <p>Junior level web developer with a keen motivation for intuitive and functional implementations. Broadly knowledgably in full stack web development from concept to completion.</p>
+            <p>Junior level web developer with a keen motivation for intuitive and functional implementations. Broadly knowledgable in full stack web development from concept to completion.</p>
         </div>
     </section>
 
@@ -188,6 +188,8 @@
         <?php // TODO: Fix memory of alert alert-warning? ?>
 
         <section class="contact-container" id="contact">
+
+
             <div class="contact-form wrapper">
 
                 @if(session('message'))
@@ -211,7 +213,6 @@
                         <div class="form-group">
                             <label for="email">Email: </label>
                             <input type="text" class="form-control" id="email" name="email" required>
-                            {{-- <small class="form-text">Rather email me directly? – austinsmiht@gmail.com</small> --}}
                         </div>
 
                         <div class="form-group">
@@ -222,18 +223,21 @@
                         <div class="form-group">
                             <button type="submit" class="btn btn-primary" value="Send">Send</button>
 
-                            <button class="btn btn-default" type="button" name="button" value="Rather email me directly?" onclick="window.location.href='mailto:austinsmiht@gmail.com'" >Rather email me directly?</button>
+                            <button class="btn btn-danger" type="button" name="button" value="Rather email me directly?" onclick="window.location.href='mailto:austinsmiht@gmail.com'" >Rather email me directly?</button>
                         </div>
                     </form>
                 </div>
             </div>
+            <div class="google-map wrapper">
+                <div id="map"></div>
+
+            </div>
         </section>
 
-    <section class="map-section">
+    {{-- <section class="map-section"> --}}
         {{-- <div class="google-map"> --}}
-            <div id="map"></div>
         {{-- </div> --}}
-    </section>
+    {{-- </section> --}}
         <!-- - - - - - - - - - - - - - - Scripts - - - - - - - - - - - - - - -->
 
         <script src="https://code.jquery.com/jquery-3.3.1.js"
