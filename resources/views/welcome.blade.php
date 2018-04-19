@@ -147,39 +147,39 @@
         <div class="project-container">
             <div id="project" class="project wrapper">
                 <div class="project-box html">
-                    <div class="project-title">HTML / CSS Assignment</div>
+                    <div class="project-title">HTML / CSS Project</div>
                     <div class="click-me">Click to view details.</div>
                 </div>
                 <div class="project-box css">
-                    <div class="project-title">CSS / HTML Assignment</div>
+                    <div class="project-title">CSS / HTML Project</div>
                     <div class="click-me">Click to view details.</div>
                 </div>
                 <div class="project-box sass">
-                    <div class="project-title">SASS Assignment</div>
+                    <div class="project-title">SASS Project</div>
                     <div class="click-me">Click to view details.</div>
                 </div>
                 <div class="project-box javascript">
-                    <div class="project-title">JavaScript Assignment</div>
+                    <div class="project-title">JavaScript Project</div>
                     <div class="click-me">Click to view details.</div>
                 </div>
                 <div class="project-box php">
-                    <div class="project-title">PHP Assignment</div>
+                    <div class="project-title">PHP Project</div>
                     <div class="click-me">Click to view details.</div>
                 </div>
                 <div class="project-box mysql">
-                    <div class="project-title">MySql Assignment</div>
+                    <div class="project-title">MySQL Project</div>
                     <div class="click-me">Click to view details.</div>
                 </div>
                 <div class="project-box wordpress">
-                    <div class="project-title">WordPress Assignment</div>
+                    <div class="project-title">WordPress Project</div>
                     <div class="click-me">Click to view details.</div>
                 </div>
                 <div class="project-box jquery">
-                    <div class="project-title">JQuery Assignment</div>
+                    <div class="project-title">JQuery Project</div>
                     <div class="click-me">Click to view details.</div>
                 </div>
                 <div class="project-box bootstrap">
-                    <div class="project-title">Bootstrap Assignment</div>
+                    <div class="project-title">Bootstrap Project</div>
                     <div class="click-me">Click to view details.</div>
                 </div>
             </div>
