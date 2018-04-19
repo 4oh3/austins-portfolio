@@ -348,6 +348,7 @@ h3 {
     flex-direction: column;
     justify-content: center;
     margin-right: 40px;
+    word-spacing: -1px;
 }
 
 @media (max-width: 892px) {
@@ -462,8 +463,7 @@ Contact
 .contact-container {
     // display: flex;
     margin: auto;
-    height: 72.5vh;
-    background-color: #9A9A9A;
+    background-color: #B3B3B3;
     box-shadow: inset 0 19px 38px -12px rgba(0,0,0,0.30), inset 0 15px 12px -12px rgba(0,0,0,0.22);
     padding-top: 40px;
     padding-bottom: 40px;
@@ -478,19 +478,9 @@ Contact
     margin-bottom: 25px;
 }
 
-// .google-map {
-//     display: flex;
-//     flex-wrap: wrap;
-//     width: 50%;
-// }
-
 .contact-form {
     font-family: 'Oswald', sans-serif;
     font-size: 20px;
-    color: white;
-    // display: flex;
-    // width: 50%;
-    // height: 55%;
 }
 
 .contact-form h1,
@@ -511,8 +501,6 @@ Contact
     color: black;
 }
 
-// TODO: Possible glitch on low res screens (galaxy s5, iphone 5, etc.) with contact containter - map overlaps send button (possible z-index, display:block?, ...)
-
 .contact-form input:focus,
 .contact-form textarea:focus {
     color: black;
@@ -527,10 +515,10 @@ Contact
     border: #0d47a1;
     font-size: 17.5px;
     width: 100%;
+    margin-bottom: 20px;
 }
 
 .btn {
-    margin-bottom: 20px;
 }
 
 .map-container {
@@ -542,61 +530,65 @@ Contact
 #map {
     height: 100%;
     width: 100%;
-    // border-radius: 5px;
-    // position: relative;
 }
 
 //
 
-// @media (max-width: 1114px) {
-//     .contact-container {
-//         height: 80vh;
-//     }
-// }
-//
-// @media (max-width: 900px) {
-//     .contact-container {
-//         height: 87.5vh;
-//     }
-// }
-//
-// @media (max-width: 892px) {
-//     .contact-container {
-//         display: block;
-//     }
-//     .contact-form {
-//         width: 100%;
-//     }
-//     .google-map {
-//         width: 100%;
-//         height: 55vh;
-//     }
-//     .contact-container {
-//         height: 135vh;
-//     }
-//     #map {
-//         margin-top: 10px;
-//     }
-// }
-//
-// @media (max-width: 554px) {
-//     .contact-container {
-//         height: 140vh;
-//     }
-//     #map {
-//         margin-top: 20px;
-//     }
-// }
-//
-// @media (max-width: 550px) {
-//     .contact-container {
-//         height: 145vh;
-//     }
-//     #map {
-//         margin-top: 55px;
-//     }
-// }
-
 /* - - - - - - - - - - - - - - - - - - - - - -
 About
 - - - - - - - - - - - - - - - - - - - - - - */
+
+.about-section {
+    background-color: #dc3545;
+    // height: 60vh;
+    box-shadow: inset 0 19px 38px -12px rgba(0,0,0,0.30), inset 0 15px 12px -12px rgba(0,0,0,0.22);
+}
+
+.about-container {
+    display: flex;
+    // margin: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.about-text {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 30px;
+    display: flex;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-text h1 {
+    font-size: 47.5px;
+}
+
+.about-image {
+    display: flex;
+    width: 50%;
+    justify-content: flex-start;
+}
+
+.about-image img {
+    border-radius: 1000px;
+    width: 75%;
+}
+
+@media (max-width: 892px) {
+    .about-container {
+        display: block;
+    }
+    .about-image {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .about-text {
+        width: 100%;
+    }
+}
+
+// TODO: Change all fonts to Oswald (except nav links & skill icons?)
