@@ -309,6 +309,14 @@ $('.contact').click(function () {
     }, 750);
 });
 
+$('.about').click(function () {
+    $('#about').fadeIn('slow');
+
+    $('html, body').animate({
+        scrollTop: $('#about').offset().top - 75
+    }, 750);
+});
+
 // TODO: Make above into a function that takes an argument / parameter? - it's repeated 3+ times.
 
 /* - - - - - - - - - - - - - - - - - - - - - -
