@@ -10423,6 +10423,13 @@ body {
   padding-left: 25px;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Oswald', sans-serif;
+}
+
 /* - - - - - - - - - - - - - - - - - - - - - -
 Desktop Nav
 - - - - - - - - - - - - - - - - - - - - - - */
@@ -10689,7 +10696,6 @@ Hero
 
 .hero-text h1 {
   font-size: 60px;
-  /* line-height: 45px; */
 }
 
 .hero-text p {
@@ -10720,7 +10726,7 @@ Skills
 .skill-container h1,
 h2,
 h3 {
-  font-family: 'PT Sans Narrow', sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
 
 .skill-container h2 {
@@ -10749,6 +10755,10 @@ h3 {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 50%;
+}
+
+.skill-grid h4 {
+  font-family: 'PT Sans Narrow', sans-serif;
 }
 
 .skill-box {
@@ -10928,7 +10938,7 @@ Contact
 
 .contact-form h1,
 .contact-form h4 {
-  font-family: 'PT Sans Narrow', sans-serif;
+  font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
 }
 
@@ -11024,7 +11034,8 @@ About
 
 .about-image img {
   border-radius: 1000px;
-  width: 75%;
+  width: 50vw;
+  margin-right: 40px;
 }
 
 @media (max-width: 892px) {
@@ -11034,6 +11045,9 @@ About
 
   .about-image {
     width: 100%;
+  }
+
+  .about-image img {
     margin: 0 auto;
   }
 

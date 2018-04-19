@@ -197,7 +197,9 @@
                     <br>
                         My name is Austin Smith. I am currently located in Calgary, Alberta — where I was born and raised.
                         <br>
-                        I decided to have a passion in web development as it supports both my creative side as well as my technical side. I believe in clean, simple designs — with full functionality. Since I like to have control of both these aspects, I enjoy working with full stack web development. Allowing me to bring a simple idea from concept to reality.
+                        I decided to have a passion in web development as it supports both my creative side as well as my technical side. I believe in clean, simple designs — with full functionality.
+                        <br>
+                        Since I like to have control of both these aspects, I enjoy working with full stack web development. Allowing me to bring a simple idea from concept to reality.
                     </p>
                 </div>
             </div>
