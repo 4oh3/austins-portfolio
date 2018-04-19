@@ -228,16 +228,14 @@
                     </form>
                 </div>
             </div>
-            <div class="google-map wrapper">
+            {{-- <div class="google-map wrapper">
                 <div id="map"></div>
-
-            </div>
+            </div> --}}
         </section>
 
-    {{-- <section class="map-section"> --}}
-        {{-- <div class="google-map"> --}}
-        {{-- </div> --}}
-    {{-- </section> --}}
+        <section class="map-container">
+                <div id="map"></div>
+        </section>
         <!-- - - - - - - - - - - - - - - Scripts - - - - - - - - - - - - - - -->
 
         <script src="https://code.jquery.com/jquery-3.3.1.js"
