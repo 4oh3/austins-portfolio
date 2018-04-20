@@ -26,12 +26,14 @@
                     <li>- Footer with social icons</li>
                     <li>- Responsive w/ mobile menu</li>
                 </ul>
+                <h3>Challenges:</h3>
+                <p>Aspect of complete abstract design</p>
                 <ul>
                     <li class="hvr-pulse-grow"><a href="https://github.com/4oh3/Assignment-4-Four-Page-Website">{ View on GitHub }</a></li>
                 </ul>
             </div>
             <div class="project-image">
-                <img src="/images/html-css-project.jpg" alt="">
+                <img src="/images/html-css-project.jpg" alt="HTML and CSS Project Screenshot">
             </div>
         </section>
     @endsection

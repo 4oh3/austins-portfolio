@@ -2,15 +2,15 @@
 
 @section('top-hero')
     <section class="hero-container">
-@endsection
+    @endsection
 
-@if(session('message'))
-    <div class='alert alert-success'>
-        {{ session('message') }}
-    </div>
-@endif
+    @if(session('message'))
+        <div class='alert alert-success'>
+            {{ session('message') }}
+        </div>
+    @endif
 
-@section('bottom-hero')
+    @section('bottom-hero')
         <div class="hero-text wrapper">
             <h1>Austin Smith</h1>
             <p>Junior level web developer with a keen motivation for intuitive and functional implementations. Broadly knowledgable in full stack web development from concept to completion.</p>
@@ -105,12 +105,12 @@
 
         <div class="project-container">
             <div id="project" class="project wrapper">
-                <a href="http://austintsmith.ca/html-css-project">
-                    <div class="project-box html">
-                        <div class="project-title">HTML / CSS Project</div>
-                        <div class="click-me">Click to view details.</div>
-                    </div>
-                </a>
+                {{-- <a href="/html-css-project"> --}}
+                <div class="project-box html">
+                    <div class="project-title">HTML / CSS Project</div>
+                    <div class="click-me">Click to view details.</div>
+                </div>
+                {{-- </a> --}}
                 <div class="project-box css">
                     <div class="project-title">CSS / HTML Project</div>
                     <div class="click-me">Click to view details.</div>
@@ -149,13 +149,13 @@
         <section class="about-section" id="about">
             <div class="about-container wrapper">
                 <div class="about-image">
-                    <img src="/images/portrait.png" alt="">
+                    <img src="/images/portrait.png" alt="Cartoon Portrait">
                 </div>
                 <div class="about-text">
                     <h1>About Me</h1>
                     <p>
-                    Hey there!
-                    <br>
+                        Hey there!
+                        <br>
                         My name is Austin Smith. I am currently located in Calgary, Alberta — where I was born and raised.
                         <br>
                         I decided to have a passion in web development as it supports both my creative side as well as my technical side. I believe in clean, simple designs — with full functionality.
@@ -205,6 +205,6 @@
         </section>
 
         <section class="map-container">
-                <div id="map"></div>
+            <div id="map"></div>
         </section>
-@endsection
+    @endsection

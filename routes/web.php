@@ -25,5 +25,21 @@ Route::get('/html-css-project', function () {
     return view('html-css-project');
 });
 
+Route::get('/sass-project', function () {
+    return view('sass-project');
+});
+
+Route::get('/javascript-project', function () {
+    return view('javascript-project');
+});
+
+Route::get('/php-mysql-project', function () {
+    return view('php-mysql-project');
+});
+
+Route::get('/wordpress-project', function () {
+    return view('wordpress-project');
+});
+
 Route::get('/contact', 'ContactController@show');
 Route::post('/contact',  'ContactController@mailToAdmin');
