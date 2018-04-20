@@ -46,7 +46,7 @@
             <ul>
                 <li><a href="/">Home</a></li>
                 <li><a class="projects" href="#projects">Projects</a></li>
-                <li><a class="about" href="/#about">About</a></li>
+                <li><a class="about" href="http://austintsmith.ca/#about">About</a></li>
                 <li><a class="contact" href="#contact">Contact</a></li>
             </ul>
             <ul>

@@ -11051,6 +11051,10 @@ Contact
   margin-bottom: 20px;
 }
 
+.alert {
+  margin-bottom: 0;
+}
+
 .map-container {
   height: 37.5vh;
 }
