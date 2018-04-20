@@ -18,7 +18,6 @@
 <body>
 
     @yield('top-hero')
-    {{-- <section class="hero-container"> --}}
 
         <nav class="mobile-nav">
             <div class="mobile-nav-toggle">
@@ -30,9 +29,9 @@
                 {{-- Hamburger Menu --}}
                 <ul class="mobile-menu">
                     <a href="/"><li>Home</li></a>
-                    <a class="projects" href="#projects"><li>Projects</li></a>
-                    <a class="about" href="#about"><li>About</li></a>
-                    <a class="contact" href="#contact"><li>Contact</li></a>
+                    <a class="projects" href="http://austintsmith.ca/#projects"><li>Projects</li></a>
+                    <a class="about" href="http://austintsmith.ca/#about"><li>About</li></a>
+                    <a class="contact" href="http://austintsmith.ca/#contact"><li>Contact</li></a>
                     <span></span>
                     <a href="https://www.instagram.com/4oh3/"><li><i class="fab fa-instagram fa-lg"></i>Instagram</li></a>
                     <a href="http://linkedin.com/in/austinsmiht/"><li><i class="fab fa-linkedin fa-lg"></i>Linkedin</li></a>
@@ -45,9 +44,9 @@
         <nav class="desktop-nav">
             <ul>
                 <li><a href="/">Home</a></li>
-                <li><a class="projects" href="#projects">Projects</a></li>
+                <li><a class="projects" href="http://austintsmith.ca/#projects">Projects</a></li>
                 <li><a class="about" href="http://austintsmith.ca/#about">About</a></li>
-                <li><a class="contact" href="#contact">Contact</a></li>
+                <li><a class="contact" href="http://austintsmith.ca/#contact">Contact</a></li>
             </ul>
             <ul>
                 <li><a href="https://www.instagram.com/4oh3/"><i class="fab fa-instagram fa-lg"></i></a></li>
@@ -57,11 +56,6 @@
             </ul>
         </nav>
 
-        {{-- <div class="hero-text wrapper">
-            <h1>Austin Smith</h1>
-            <p>Junior level web developer with a keen motivation for intuitive and functional implementations. Broadly knowledgable in full stack web development from concept to completion.</p>
-        </div>
-    </section> --}}
     @yield('bottom-hero')
 
     @yield('content')
