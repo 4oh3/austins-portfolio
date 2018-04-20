@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    {{-- <meta name="csrf-token" content="{{ csrf_token() }}"> --}}
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>Austin Smith - Portfolio</title>
 
@@ -17,7 +17,9 @@
 </head>
 <body>
 
-    <section class="hero-container">
+    @yield('top-hero')
+    {{-- <section class="hero-container"> --}}
+
         <nav class="mobile-nav">
             <div class="mobile-nav-toggle">
                 <input class="toggle" type="checkbox"/>
@@ -54,11 +56,13 @@
                 <li><a href="https://bitbucket.org/4oh3/"><i class="fab fa-bitbucket fa-lg"></i></a></li>
             </ul>
         </nav>
-        <div class="hero-text wrapper">
+
+        {{-- <div class="hero-text wrapper">
             <h1>Austin Smith</h1>
             <p>Junior level web developer with a keen motivation for intuitive and functional implementations. Broadly knowledgable in full stack web development from concept to completion.</p>
         </div>
-    </section>
+    </section> --}}
+    @yield('bottom-hero')
 
     @yield('content')
 

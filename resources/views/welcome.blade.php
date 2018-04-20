@@ -1,5 +1,17 @@
 @extends('layouts.app')
 
+@section('top-hero')
+    <section class="hero-container">
+@endsection
+
+@section('bottom-hero')
+        <div class="hero-text wrapper">
+            <h1>Austin Smith</h1>
+            <p>Junior level web developer with a keen motivation for intuitive and functional implementations. Broadly knowledgable in full stack web development from concept to completion.</p>
+        </div>
+    </section>
+@endsection
+
 @section('content')
     <div class="skill-container wrapper" id="projects">
         <div class="skill-text">
@@ -87,10 +99,12 @@
 
         <div class="project-container">
             <div id="project" class="project wrapper">
-                <div class="project-box html">
-                    <div class="project-title">HTML / CSS Project</div>
-                    <div class="click-me">Click to view details.</div>
-                </div>
+                <a href="/html-css-project">
+                    <div class="project-box html">
+                        <div class="project-title">HTML / CSS Project</div>
+                        <div class="click-me">Click to view details.</div>
+                    </div>
+                </a>
                 <div class="project-box css">
                     <div class="project-title">CSS / HTML Project</div>
                     <div class="click-me">Click to view details.</div>

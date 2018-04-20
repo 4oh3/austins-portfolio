@@ -21,5 +21,9 @@ Route::get('/', function () {
 |--------------------------------------------------------------------------
 */
 
+Route::get('/html-css-project', function () {
+    return view('html-css-project');
+});
+
 Route::get('/contact', 'ContactController@show');
-Route::post('/contact',  'ContactController@mailToAdmin'); 
+Route::post('/contact',  'ContactController@mailToAdmin');
