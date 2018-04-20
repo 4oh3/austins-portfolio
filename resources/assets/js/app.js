@@ -221,10 +221,7 @@ function initMap() {
 General / Cleanups
 - - - - - - - - - - - - - - - - - - - - - - */
 
-// TODO: Scroll to top on reload - FIX CHROME
-
 $(document).ready(function(){
-    $(this).scrollTop(0);
     initMap();
 });
 
