@@ -105,12 +105,10 @@
 
         <div class="project-container">
             <div id="project" class="project wrapper">
-                {{-- <a href="/html-css-project"> --}}
                 <div class="project-box html">
                     <div class="project-title">HTML / CSS Project</div>
                     <div class="click-me">Click to view details.</div>
                 </div>
-                {{-- </a> --}}
                 <div class="project-box css">
                     <div class="project-title">CSS / HTML Project</div>
                     <div class="click-me">Click to view details.</div>
