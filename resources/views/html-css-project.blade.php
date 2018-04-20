@@ -21,34 +21,37 @@
     </section> --}}
 
     @section('top-hero')
-        <section class="hero-container">
+        <section class="hero-container-project">
     @endsection
 
     @section('bottom-hero')
-            <div class="hero-text wrapper">
+            <div class="hero-text-project wrapper">
                 <h3>Technolgy Used:</h3>
                 <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>Bootstrap</li>
-                    <li></li>
+                    <li>- HTML</li>
+                    <li>- CSS</li>
+                    <li>- JavaScript</li>
+                    <li>- Bootstrap</li>
                 </ul>
-                <h3>Objective</h3>
-                <p>Create a "Four Page Website" following this criteria:</p>
+                <h3>Objective:</h3>
+                <p>Create a "Four Page Website" following this criteria</p>
                 <ul>
-                    <li>4 pages: Home, About, Products, Contact.</li>
-                    <li>Home page should be a summary of the company or product</li>
-                    <li>About page should be either a description of the company, or employee bio</li>
-                    <li>Products page should have a list of products</li>
-                    <li>Contact page should have an email input and a text area for comments, and a submit button (this does not need to be hooked up to a backend server)</li>
-                    <li>Nav should include a Logo</li>
-                    <li>All links should work</li>
-                    <li>Include Hero section</li>
-                    <li>Include Footer with social icons</li>
-                    <li>Site should be responsive</li>
-                    <li>Site should have a mobile menu</li>
+                    <li>- 4 pages: Home, About, Products, Contact</li>
+                    <li>- Home Page: Summary of the company or product</li>
+                    <li>- About Page: Either a description of the company, or employee bio</li>
+                    <li>- Products Page: List of products</li>
+                    <li>- Contact Page: Email input + text area for comments + submit button</li>
+                    <li>- Nav should have a logo</li>
+                    <li>- Hero section</li>
+                    <li>- Footer with social icons</li>
+                    <li>- Responsive w/ mobile menu</li>
                 </ul>
+                <ul>
+                    <li class="hvr-pulse-grow"><a href="https://github.com/4oh3/Assignment-4-Four-Page-Website">{ View on GitHub }</a></li>
+                </ul>
+            </div>
+            <div class="project-image">
+                <img src="/images/html-css-project.jpg" alt="">
             </div>
         </section>
     @endsection

@@ -10431,7 +10431,7 @@ h4 {
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - -
-Desktop Nav
+Desktop Nav + Other <a> tags
 - - - - - - - - - - - - - - - - - - - - - - */
 
 .desktop-nav {
@@ -10757,7 +10757,9 @@ h3 {
   width: 50%;
 }
 
-.skill-grid h4 {
+.skill-grid h4,
+.skill-grid h3,
+.skill-grid h2 {
   font-family: 'PT Sans Narrow', sans-serif;
 }
 
@@ -10976,6 +10978,7 @@ About
   }
 
   .about-image img {
+    width: 50vh;
     margin: 0 auto;
   }
 
@@ -11060,20 +11063,17 @@ Contact
 HTML CSS Project
 - - - - - - - - - - - - - - - - - - - - - - */
 
-.hero-container {
+.hero-container-project {
   background: url("/images/hero.jpg") no-repeat bottom;
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: multiply;
   background-attachment: fixed;
-  height: 82.5vh;
   color: white;
   font-family: 'PT Sans Narrow', sans-serif;
-  -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
-          box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 
-.hero-text {
+.hero-text-project {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11081,22 +11081,57 @@ HTML CSS Project
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 30vh;
+  padding-top: 10vh;
+  padding-bottom: 7.5vh;
 }
 
-.hero-text h1 {
-  font-size: 60px;
+.hero-text-project h3 {
+  font-size: 35px;
 }
 
-.hero-text p {
-  font-size: 27px;
+.hero-text-project p {
+  font-size: 25px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  margin-bottom: 8px;
+}
+
+.hero-text-project p {
+  font-size: 25px;
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
 }
 
+.hero-text-project ul {
+  list-style: none;
+  font-size: 20px;
+  line-height: 22.5px;
+}
+
+.hero-text-project a {
+  font-size: 22.5px;
+  color: #dc3545;
+}
+
+.project-image {
+  background-color: #B3B3B3;
+  -webkit-box-shadow: inset 0 19px 38px -12px rgba(0, 0, 0, 0.3), inset 0 15px 12px -12px rgba(0, 0, 0, 0.22);
+          box-shadow: inset 0 19px 38px -12px rgba(0, 0, 0, 0.3), inset 0 15px 12px -12px rgba(0, 0, 0, 0.22);
+  padding: 20px 0;
+}
+
+.project-image img {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  border-radius: 5px;
+}
+
 @media (max-width: 842px) {
-  .hero-text {
-    padding-top: 15vh;
+  .project-image img {
+    width: 95%;
   }
 }
 

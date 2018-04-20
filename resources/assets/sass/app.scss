@@ -48,7 +48,7 @@ h4 {
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - -
-Desktop Nav
+Desktop Nav + Other <a> tags
 - - - - - - - - - - - - - - - - - - - - - - */
 
 .desktop-nav {
@@ -128,9 +128,7 @@ a:link {
     transform: scaleY(1);
 }
 
-
 // Nav Media Query's
-
 
 @media (max-width: 842px) {
     .desktop-nav {
@@ -251,8 +249,6 @@ Mobile Nav Menu
 Hero
 - - - - - - - - - - - - - - - - - - - - - - */
 
-// TODO: Compress hero.jpg
-
 .hero-container {
     background: url("/images/hero.jpg") no-repeat bottom;
     background-size: cover;
@@ -317,7 +313,6 @@ h3 {
 
 .skill-container h1 {
     font-size: 60px;
-    // font-style: oblique;
 }
 
 .skill-container p {
@@ -331,7 +326,9 @@ h3 {
     width: 50%;
 }
 
-.skill-grid h4 {
+.skill-grid h4,
+.skill-grid h3,
+.skill-grid h2 {
     font-family: 'PT Sans Narrow', sans-serif;
 }
 
@@ -387,7 +384,6 @@ Projects
     height: 50vh;
     background-color: #0d47a1;
     box-shadow: inset 0 19px 38px -12px rgba(0,0,0,0.30), inset 0 15px 12px -12px rgba(0,0,0,0.22);
-    // box-shadow: inset 0 8px 6px -6px black;
 }
 
 .project {
@@ -472,13 +468,11 @@ About
 
 .about-section {
     background-color: #dc3545;
-    // height: 60vh;
     box-shadow: inset 0 19px 38px -12px rgba(0,0,0,0.30), inset 0 15px 12px -12px rgba(0,0,0,0.22);
 }
 
 .about-container {
     display: flex;
-    // margin: auto;
     padding-top: 40px;
     padding-bottom: 40px;
 }
@@ -519,14 +513,13 @@ About
         width: 100%;
     }
     .about-image img {
+        width: 50vh;
         margin: 0 auto;
     }
     .about-text {
         width: 100%;
     }
 }
-
-// TODO: Change all fonts to Oswald (except nav links & skill icons?)
 
 /* - - - - - - - - - - - - - - - - - - - - - -
 Contact
@@ -597,105 +590,76 @@ Contact
 }
 
 // Google Maps
-
 #map {
     height: 100%;
     width: 100%;
 }
-
-//
-
+// Google Maps
 
 /* - - - - - - - - - - - - - - - - - - - - - -
 HTML CSS Project
 - - - - - - - - - - - - - - - - - - - - - - */
 
-// .project-section {
-//     background-color: #b3b3b3;
-//     box-shadow: inset 0 19px 38px -12px rgba(0,0,0,0.30), inset 0 15px 12px -12px rgba(0,0,0,0.22);
-// }
-//
-// .project-page-container {
-//     display: flex;
-//     // margin: auto;
-//     padding-top: 75px;
-//     padding-bottom: 40px;
-//     // height: 100vh;
-// }
-//
-// .project-text {
-//     font-family: 'Oswald', sans-serif;
-//     font-weight: 300;
-//     font-size: 25px;
-//     line-height: 30px;
-//     display: flex;
-//     width: 50%;
-//     height: 100%;
-//     flex-direction: column;
-//     justify-content: center;
-// }
-//
-// .project-text h1 {
-//     font-size: 47.5px;
-// }
-//
-// .project-image {
-//     display: flex;
-//     width: 50%;
-//     justify-content: flex-start;
-// }
-//
-// .project-image img {
-//     // border-radius: 1000px;
-//     width: 50vw;
-//     margin-right: 40px;
-// }
-//
-// @media (max-width: 892px) {
-//     .project-page-container {
-//         display: block;
-//     }
-//     .project-image {
-//         width: 100%;
-//     }
-//     .project-image img {
-//         margin: 0 auto;
-//     }
-//     .project-text {
-//         width: 100%;
-//     }
-// }
-
-.hero-container {
+.hero-container-project {
     background: url("/images/hero.jpg") no-repeat bottom;
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: multiply;
     background-attachment: fixed;
-    height: 82.5vh;
     color: white;
     font-family: 'PT Sans Narrow', sans-serif;
-    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 
-.hero-text {
+.hero-text-project {
     display: flex;
     flex-direction: column;
-    padding-top: 30vh;
+    padding-top: 10vh;
+    padding-bottom: 7.5vh;
 }
 
-.hero-text h1 {
-    font-size: 60px;
+.hero-text-project h3 {
+    font-size: 35px;
 }
 
-.hero-text p {
-    font-size: 27px;
+.hero-text-project p {
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    margin-bottom: 8px;
+}
+
+.hero-text-project p {
+    font-size: 25px;
     font-family: 'Oswald', sans-serif;
     font-weight: 300;
 }
 
+.hero-text-project ul {
+    list-style: none;
+    font-size: 20px;
+    line-height: 22.5px;
+}
+
+.hero-text-project a {
+    font-size: 22.5px;
+    color: #dc3545;
+}
+
+.project-image {
+    background-color: #B3B3B3;
+    box-shadow: inset 0 19px 38px -12px rgba(0,0,0,0.30), inset 0 15px 12px -12px rgba(0,0,0,0.22);
+    padding: 20px 0;
+}
+
+.project-image img {
+    width: 50%;
+    display: flex;
+    margin: auto;
+    border-radius: 5px;
+}
+
 @media (max-width: 842px) {
-    .hero-text {
-        padding-top: 15vh;
+    .project-image img {
+        width: 95%;
     }
 }
