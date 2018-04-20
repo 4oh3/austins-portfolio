@@ -4,6 +4,12 @@
     <section class="hero-container">
 @endsection
 
+@if(session('message'))
+    <div class='alert alert-success'>
+        {{ session('message') }}
+    </div>
+@endif
+
 @section('bottom-hero')
         <div class="hero-text wrapper">
             <h1>Austin Smith</h1>
@@ -166,11 +172,7 @@
 
             <div class="contact-form wrapper">
 
-                @if(session('message'))
-                    <div class='alert alert-success'>
-                        {{ session('message') }}
-                    </div>
-                @endif
+
 
                 <div class="col-12 col-md-12">
 
