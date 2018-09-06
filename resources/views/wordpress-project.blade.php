@@ -26,7 +26,7 @@
                 <h3>Challenges:</h3>
                 <p>Customizing predefined wordpress elements</p>
                 <ul>
-                    <li class="hvr-pulse-grow"><a href="http://35.184.65.81">{ View Live Site }</a></li>
+                    <li class="hvr-pulse-grow"><a href="https://drive.google.com/drive/folders/1M-xQ9AQQfbLS-ttxAP06HMrvvyUxjPpQ?usp=sharing">{ View Screenshots }</a></li>
                 </ul>
             </div>
             <div class="project-image">

@@ -152,13 +152,20 @@
                 <div class="about-text">
                     <h1>About Me</h1>
                     <p>
-                        Hey there!
                         <br>
-                        My name is Austin Smith. I am currently located in Calgary, Alberta — where I was born and raised.
+                        When I'm not doing web development related things you'll find me:
                         <br>
-                        I decided to have a passion in web development as it supports both my creative side as well as my technical side. I believe in clean, simple designs — with full functionality.
                         <br>
-                        Since I like to have control of both these aspects, I enjoy working with full stack web development. Allowing me to bring a simple idea from concept to reality.
+                        <span class="instagram"><a href="#"><i class="fab fa-instagram fa-lg"></i></a></span> Developing My Small Brand <span class="store"><a href="#"><i class="fas fa-shopping-cart"></i></a></span>
+                        <br>
+                        <br>
+                        <span class="instagram"><a href="#"><i class="fab fa-instagram fa-lg"></i></a></span> Taking Pictures
+                        <br>
+                        <br>
+                        <span class="youtube"><a href="#"><i class="fab fa-youtube fa-lg"></i></a></span> Making Videos
+                        <br>
+                        <br>
+                        Click any of the icons to see my latest work!
                     </p>
                 </div>
             </div>

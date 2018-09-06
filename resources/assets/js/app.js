@@ -328,47 +328,38 @@ Click on Specific Project goes to Specific Project Page
 
 $('.html').click(function(){
     window.location = "http://austintsmith.ca/html-css-project";
-    console.log('clicked!');
 });
 
 $('.css').click(function(){
     window.location = "http://austintsmith.ca/html-css-project";
-    console.log('clicked!');
 });
 
 $('.sass').click(function(){
     window.location = "http://austintsmith.ca/sass-project";
-    console.log('clicked!');
 });
 
 $('.javascript').click(function(){
     window.location = "http://austintsmith.ca/javascript-project";
-    console.log('clicked!');
 });
 
 $('.php').click(function(){
     window.location = "http://austintsmith.ca/php-mysql-project";
-    console.log('clicked!');
 });
 
 $('.mysql').click(function(){
     window.location = "http://austintsmith.ca/php-mysql-project";
-    console.log('clicked!');
 });
 
 $('.wordpress').click(function(){
     window.location = "http://austintsmith.ca/wordpress-project";
-    console.log('clicked!');
 });
 
 $('.jquery').click(function(){
     window.location = "http://austintsmith.ca/javascript-project";
-    console.log('clicked!');
 });
 
 $('.bootstrap').click(function(){
     window.location = "http://austintsmith.ca/html-css-project";
-    console.log('clicked!');
 });
 
 /* - - - - - - - - - - - - - - - - - - - - - -

@@ -19,7 +19,7 @@
                 <p>Create a "Web App Remaking a Website (facebook, reddit, etc.)" following this criteria</p>
                 <ul>
                     <li>- Style as closely as possible to current website design</li>
-                    <li>- Organize markup into appropiat views ('partials')</li>
+                    <li>- Organize markup into appropriate views ('partials')</li>
                     <li>- Pass data from a controller into the view</li>
                     <li>- Log in / out functionality</li>
                     <li>- When logged in user should be able to:</li>
@@ -34,7 +34,7 @@
                 <p>Completion of requirements in tight timeframe</p>
                 <ul>
                     <li class="hvr-pulse-grow"><a href="https://bitbucket.org/4oh3/wbdv-winter-2018-php-austin-smith/src/master/assignment-1/">{ View on BitBucket }</a></li>
-                    <li class="hvr-pulse-grow"><a href="http://35.173.109.128">{ View Live Site }</a></li>
+                    <li class="hvr-pulse-grow"><a href="http://18.232.93.132/">{ View Live Site }</a></li>
                 </ul>
             </div>
             <div class="project-image">

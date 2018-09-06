@@ -27,7 +27,7 @@
                 <h3>Challenges:</h3>
                 <p>Working as a team (allocating certain tasks)</p>
                 <ul>
-                    <li class="hvr-pulse-grow"><a href="https://bitbucket.org/wearehackers/microwave/src/master/">{ View on BitBucket }</a></li>
+                    <li class="hvr-pulse-grow"><a href="https://bitbucket.org/4oh3/microwave-assignment/src/master/">{ View on BitBucket }</a></li>
                 </ul>
             </div>
             <div class="project-image">
