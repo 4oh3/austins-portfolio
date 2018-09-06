@@ -10,7 +10,7 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 
-    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,700|PT+Sans+Narrow:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300|PT+Sans+Narrow:400" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="/css/app.css">
     <link rel="stylesheet" type="text/css" href="/css/hover.css">
@@ -62,27 +62,25 @@
 
         <!-- - - - - - - - - - - - - - - Scripts - - - - - - - - - - - - - - -->
 
-        <script src="https://code.jquery.com/jquery-3.3.1.js"
-        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-        crossorigin="anonymous"></script>
+            <script src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
 
-        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDReZovdgRSEeRtGtFcucwQldMm_JhDbBk&callback=initMap"
-        type="text/javascript"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+            <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
-        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-
-        <script>
-            window.Laravel = {!! json_encode([
-                'csrfToken' => csrf_token(),
-                ]) !!};
+            <script>
+                window.Laravel = {!! json_encode([
+                    'csrfToken' => csrf_token(),
+                    ]) !!};
             </script>
+
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDReZovdgRSEeRtGtFcucwQldMm_JhDbBk&callback=initMap" async defer
+            type="text/javascript"></script>
 
             <script src="/js/app.js"></script>
         </body>
         </html>
-
-        <?php // TODO: Run through spell checker ?>

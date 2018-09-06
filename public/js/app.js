@@ -245,6 +245,8 @@ $(document).ready(function () {
     initMap();
 });
 
+window.initMap = initMap;
+
 /* - - - - - - - - - - - - - - - - - - - - - -
 Expand Projects Section on Any Skill Click
 - - - - - - - - - - - - - - - - - - - - - - */
@@ -380,26 +382,6 @@ $('.jquery').click(function () {
 $('.bootstrap').click(function () {
     window.location = "http://austintsmith.ca/html-css-project";
 });
-
-/* - - - - - - - - - - - - - - - - - - - - - -
-Privacy Policy
-- - - - - - - - - - - - - - - - - - - - - - */
-
-(function (w, d) {
-    var loader = function loader() {
-        var s = d.createElement("script"),
-            tag = d.getElementsByTagName("script")[0];
-
-        s.src = "//cdn.iubenda.com/iubenda.js";
-        tag.parentNode.insertBefore(s, tag);
-    };if (w.addEventListener) {
-        w.addEventListener("load", loader, false);
-    } else if (w.attachEvent) {
-        w.attachEvent("onload", loader);
-    } else {
-        w.onload = loader;
-    }
-})(window, document);
 
 /***/ }),
 /* 2 */

@@ -202,7 +202,6 @@
                         <div class="form-group">
                             <button type="submit" class="btn btn-primary" value="Send">Send</button>
                             <button class="btn btn-danger" type="button" name="button" value="Rather email me directly?" onclick="window.location.href='mailto:austinsmiht@gmail.com'" >Rather email me directly?</button>
-                            <button class="btn btn-warning iubenda-black iubenda-embed" type="button" name="button" title="Privacy Policy" value="Privacy Policy" onclick="window.location.href='//www.iubenda.com/privacy-policy/60528495'" >Privacy Policy</button>
                         </div>
                     </form>
                 </div>
@@ -213,7 +212,3 @@
             <div id="map"></div>
         </section>
     @endsection
-
-
-
-    {{-- <script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "//cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script> --}}
