@@ -156,13 +156,13 @@
                         When I'm not doing web development related things you'll find me:
                         <br>
                         <br>
-                        <span class="instagram"><a href="#"><i class="fab fa-instagram fa-lg"></i></a></span> Developing My Small Brand <span class="store"><a href="#"><i class="fas fa-shopping-cart"></i></a></span>
+                        <span class="instagram"><a href="https://www.instagram.com/okurasuclub/"><i class="fab fa-instagram fa-lg"></i></a></span> Developing My Small Brand <span class="store"><a href="https://www.okurasu.club/"><i class="fas fa-shopping-cart"></i></a></span>
                         <br>
                         <br>
-                        <span class="instagram"><a href="#"><i class="fab fa-instagram fa-lg"></i></a></span> Taking Pictures
+                        <span class="instagram"><a href="https://www.instagram.com/4oh3/"><i class="fab fa-instagram fa-lg"></i></a></span> Taking Pictures
                         <br>
                         <br>
-                        <span class="youtube"><a href="#"><i class="fab fa-youtube fa-lg"></i></a></span> Making Videos
+                        <span class="youtube"><a href="https://www.youtube.com/channel/UCxVCrkin6pVwVwR3RZWg4GQ"><i class="fab fa-youtube fa-lg"></i></a></span> Making Videos
                         <br>
                         <br>
                         Click any of the icons to see my latest work!
