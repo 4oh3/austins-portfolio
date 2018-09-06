@@ -42,7 +42,7 @@ class InboxMessage extends Notification
     public function toMail($notifiable)
     {
         return (new MailMessage)
-        ->subject(config('admin.name') . ", You got a new message from your contact form on austintsmith.ca")
+        ->subject("New Message from Contact Form on – austintsmith.ca")
         ->greeting(" ")
         ->salutation(" ")
         ->from($this->message->email, $this->message->name)

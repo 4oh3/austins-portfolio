@@ -20,6 +20,6 @@ class ContactController extends Controller
 	{   //send the admin an notification
 		$admin->notify(new InboxMessage($message));
 		// redirect the user back
-		return redirect()->back()->with('message', 'Thanks for the message! I will get back to you soon!');
+		return redirect()->back()->with('message', 'Message successfully sent! Expect a reply back shortly!');
 	}
 }
