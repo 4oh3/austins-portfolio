@@ -41,12 +41,13 @@ class InboxMessage extends Notification
      */
     public function toMail($notifiable)
     {
-                    return (new MailMessage)
-                   ->subject(config('admin.name') . ", you got a new message!")
-                   ->greeting(" ")
-                   ->salutation(" ")
-                   ->from($this->message->email, $this->message->name)
-                   ->line($this->message->message);
+        return (new MailMessage)
+        ->subject(config('admin.name') . ", You got a new message from your contact form on austintsmith.ca")
+        ->greeting(" ")
+        ->salutation(" ")
+        ->from($this->message->email, $this->message->name)
+        ->line($this->message->email, $this->message->name)
+        ->line($this->message->message);
     }
 
     /**
