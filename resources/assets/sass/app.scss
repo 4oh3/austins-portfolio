@@ -522,28 +522,20 @@ About
     }
 }
 
-.store a {
-    color: black;
+.about-button {
+    padding: 0 10px 4px;
+    border-radius: 0.25rem;
+    background-color: $blue;
+    margin-right: 10px;
 
     &:hover {
-        color: $darker-red;
+        background-color: $darker-blue;
+        cursor: pointer;
     }
 }
 
-.instagram a {
-    color: black;
-
-    &:hover {
-        color: $darker-red;
-    }
-}
-
-.youtube a {
-    color: black;
-
-    &:hover {
-        color: $darker-red;
-    }
+.about-button:nth-last-of-type(3) {
+    margin-left: 10px;
 }
 
 @media (max-width: 892px) {
