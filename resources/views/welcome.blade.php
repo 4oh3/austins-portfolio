@@ -13,7 +13,7 @@
     @section('bottom-hero')
     <div class="hero-text wrapper">
         <h1>Austin Smith</h1>
-        <p>Junior level web developer with a keen motivation for intuitive and functional implementations. Broadly
+        <p>Level web developer with a keen motivation for intuitive and functional implementations. Broadly
             knowledgable in full stack web development from concept to completion.</p>
     </div>
 </section>
