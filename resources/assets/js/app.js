@@ -329,37 +329,37 @@ Click on Specific Project goes to Specific Project Page
 - - - - - - - - - - - - - - - - - - - - - - */
 
 $('.html').click(function(){
-    window.location = "http://austintsmith.ca/html-css-project";
+    window.location = "http://18.204.81.85/html-css-project";
 });
 
 $('.css').click(function(){
-    window.location = "http://austintsmith.ca/html-css-project";
+    window.location = "http://18.204.81.85/html-css-project";
 });
 
 $('.sass').click(function(){
-    window.location = "http://austintsmith.ca/sass-project";
+    window.location = "http://18.204.81.85/sass-project";
 });
 
 $('.javascript').click(function(){
-    window.location = "http://austintsmith.ca/javascript-project";
+    window.location = "http://18.204.81.85/javascript-project";
 });
 
 $('.php').click(function(){
-    window.location = "http://austintsmith.ca/php-mysql-project";
+    window.location = "http://18.204.81.85/php-mysql-project";
 });
 
 $('.mysql').click(function(){
-    window.location = "http://austintsmith.ca/php-mysql-project";
+    window.location = "http://18.204.81.85/php-mysql-project";
 });
 
 $('.wordpress').click(function(){
-    window.location = "http://austintsmith.ca/wordpress-project";
+    window.location = "http://18.204.81.85/wordpress-project";
 });
 
 $('.jquery').click(function(){
-    window.location = "http://austintsmith.ca/javascript-project";
+    window.location = "http://18.204.81.85/javascript-project";
 });
 
 $('.bootstrap').click(function(){
-    window.location = "http://austintsmith.ca/html-css-project";
+    window.location = "http://18.204.81.85/html-css-project";
 });
